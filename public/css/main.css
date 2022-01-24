@@ -1,0 +1,417 @@
+/********** FONTS **********/
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'lato-light';
+    src: url('fonts/lato/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'lato-thin';
+    src: url('fonts/lato/Lato-Thin.ttf');
+}
+@font-face {
+    font-family: alex-brush;
+    src: url('fonts/alex-brush/AlexBrush-Regular.ttf');
+}
+@font-face {
+    font-family: rochester;
+    src: url('fonts/Rochester/rochester-Regular.ttf');
+}
+@font-face {
+    font-family: debby;
+    src: url('fonts/debby/Debby.ttf');
+}
+
+/********** VOLUMES **********/
+html, body{
+    min-height: 100%; height: 100%;
+}
+#main{
+    min-height: 100%;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+.container {max-width: 100%; width: 100%;}
+    @media (min-width: 1140px) {.container {max-width: 1140px;}}
+section{padding-top: 5rem; padding-bottom: 5rem;}
+.not-displayed{display: none !important;}
+
+
+/********** FONT **********/
+body, p, a, address, span, strong, div, li, .form-control::placeholder, .txt-quote, .form-control{font-family: latoregular, sans-serif; font-size: 1rem; color: rgb(79, 88 ,80);}
+.txt-100{font-weight: 100;}
+.txt-b{font-weight: bold;}
+.txt-600{font-weight: 1000;}
+.s-2{font-size: 1rem;}
+.close span{font-size: 1.5rem !important;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span{font-weight: light; font-family: rochester; color: rgb(53, 59, 54);}
+h3, h4, h5, h6, .h3, .h4, .h5, .h6, h3 span, h4 span, h5 span, h6 span, .h3 span, .h4 span, .h5 span, .h6 span{font-family: debby;}
+
+.font-weight-light{font-weight: 300;}
+.font-weight-v-light{font-weight: 200;}
+.link{cursor: pointer;} .link:hover{text-decoration: underline;}
+
+/* UI */
+.ui-datepicker-next, .ui-datepicker-prev{cursor: pointer;}
+
+/* COLORS */
+
+/* BLACK */
+.t1-0-clr{color: rgb(14, 17, 15);} .t1-1-bg{background-color: rgb(14, 17, 15);}
+.t1-1-clr{color: rgb(24, 27, 25) !important;} .t1-1-bg{background-color: rgb(24, 27, 25);}
+.t1-11-clr{color: rgb(61, 69, 62);} .t1-11-bg{background-color: rgb(61, 69, 62);}
+.t1-2-clr{color: rgb(79, 88 ,80);} .t1-2-bg{background-color: rgb(79, 88, 80);}
+.t1-3-clr{color: rgb(111, 115, 108);} .t1-3-bg{background-color: rgb(111, 115, 108);}
+.t1-4-clr{color: rgb(141, 142, 138);} .t1-4-bg{background-color: rgb(141, 142, 138);}
+.t1-5-clr{color: rgb(178, 178, 175) !important;} .t1-5-bg{background-color: rgb(178, 178, 175) !important;}
+.t1-51-clr{color: rgb(215, 215, 214);} .t1-5-bg{background-color: rgb(214, 214, 214);}
+.t1-6-clr{color: rgb(242, 242, 241) !important;} .t1-6-bg{background-color: rgb(242, 242, 242) !important;}
+.t1-7-clr{color: rgb(250, 250, 249);} .t1-7-bg{background-color: rgb(250, 250, 250);}
+
+/* BLUE BRAND */
+.t2-0-clr{color: rgb(19, 110, 74);} .t2-0-bg{background-color: rgb(19, 110, 74);}
+.t2-1-clr{color: rgb(24, 148, 98);} .t2-1-bg{background-color: rgb(24, 148, 98);}
+.t2-2-clr{color: rgb(32, 181, 121);} .t2-2-bg{background-color: rgb(32, 181, 121);}
+.t2-3-clr{color: rgb(54, 212, 149);} .t2-3-bg{background-color: rgb(54, 212, 149);}
+.t2-4-clr{color: rgb(75, 226, 166);} .t2-4-bg{background-color: rgb(75, 226, 166);}
+.t2-5-clr{color: rgb(160, 253, 216) !important;} .t2-5-bg{background-color: rgb(160, 253, 216) !important;}
+.t2-57str-bg{background: repeating-linear-gradient(45deg,rgb(32, 181, 121), rgb(19, 110, 74) 1px, rgb(19, 110, 74) 2px,rgb(32, 181, 121) 5px);}
+
+
+.t42-31str-bg{background: repeating-linear-gradient(65deg,rgb(19, 110, 74),rgb(24, 148, 98) 1px,rgb(24, 148, 98) 2px,rgb(19, 110, 74) 5px);}
+
+/* BROWN */
+.t4-2-clr{color: rgb(126, 83, 10);} .t4-2-bg{background-color: rgb(126, 83, 10);}
+.t4-3-clr{color: rgb(211, 132, 12);} .t4-3-bg{background-color: rgb(211, 132, 12);}
+.t4-4-clr{color: rgb(255, 159, 15);} .t4-4-bg{background-color: rgb(255, 159, 15);}
+.t4-5-clr{color: rgb(255, 190, 93)} .t4-5-bg{background-color: rgb(255, 190, 93);}
+.t4-6-clr{color: rgb(255, 223, 175);} .t4-7-bg{background-color: rgb(255, 223, 175);}
+.t4-32str-bg{background: repeating-linear-gradient(-45deg,rgb(211, 132, 12),rgb(126, 83, 10) 1px,rgb(126, 83, 10) 2px,rgb(211, 132, 12) 5px);}
+
+/* DARK BROWN */
+.t5-1-clr{color: rgb(100, 90, 73);} .t5-1-bg{background-color: rgb(100, 90, 73);}
+.t5-2-clr{color: rgb(131, 117, 95);} .t5-2-bg{background-color: rgb(131, 117, 95);}
+.t5-3-clr{color: rgb(153, 137, 111);} .t5-3-bg{background-color: rgb(153, 137, 111);}
+.t5-4-clr{color: rgb(171, 157, 137);} .t5-4-bg{background-color: rgb(171, 157, 137);}
+.t5-5-clr{color: rgb(190, 180, 164);} .t5-5-bg{background-color: rgb(190, 180, 164);}
+.t5-6-clr{color: rgb(210, 202, 191);} .t5-6-bg{background-color: rgb(210, 202, 191);}
+.t5-7-clr{color: rgb(232, 228, 222);} .t5-7-bg{background-color: rgb(232, 228, 222);}
+.t5-67str-bg{background: repeating-linear-gradient(45deg,rgb(210, 202, 191),rgb(232, 228, 222) 1px,rgb(232, 228, 222) 2px,rgb(210, 202, 191) 5px);}
+
+/* PINK */
+.t7-2-clr{color: rgb(187, 166, 168);} .t7-2-bg{background-color: rgb(187, 166, 168);}
+.t7-3-clr{color: rgb(212, 191, 193);} .t7-3-bg{background-color: rgb(212, 191, 193);}
+.t7-4-clr{color: rgb(219, 204, 205);} .t7-4-bg{background-color: rgb(219, 204, 205);}
+.t7-5-clr{color: rgb(229, 217, 218);} .t7-5-bg{background-color: rgb(229, 217, 218);}
+.t7-6-clr{color: rgb(237, 230, 230);} .t7-6-bg{background-color: rgb(237, 230, 230);}
+.t7-7-clr{color: rgb(245, 241, 242);} .t7-7-bg{background-color: rgb(245, 241, 242);}
+
+.texture-grain-bg{content:""; background-image: url(/images/texture/grain.png);}
+
+.keep{white-space: nowrap;}
+.shadow{box-shadow: 0rem .125rem .3rem rgba(0,0,0,.35) !important;}
+.shadow-1{box-shadow: 0rem .125rem .2rem rgba(0,0,0,.25) !important;}
+.shadow-2{box-shadow: 0rem .125rem .14rem rgba(0,0,0,.14) !important;}
+
+h1, .h1, h1 span, .h1 span{font-size: 5.4rem !important;}
+h2, .h2, h2 span, .h2 span{font-size: 4rem !important;}
+h3, .h3, h3 span, .h3 span{font-size: 3rem !important;}
+@media (max-width: 991.98px) {
+    h1, .h1, h1 span, .h1 span{font-size: 4.1rem !important;}
+    h2, .h2, h2 span, .h2 span{font-size: 1.6rem !important;}
+    h3, .h3, h3 span, .h3 span{font-size: 1.5rem !important;}
+}
+@media (max-width: 767.98px) {
+    h1, .h1, h1 span, .h1 span{font-size: 1.9rem !important;}
+    h2, .h2, h2 span, .h2 span{font-size: 1.5rem !important;}
+    h3, .h3, h3 span, .h3 span{font-size: 1.4rem !important;}
+}
+@media (max-width: 575.98px) {
+    h1, .h1, h1 span, .h1 span{font-size: 1.9rem !important;}
+    h2, .h2, h2 span, .h2 span{font-size: 1.4rem !important;}
+    h3, .h3, h3 span, .h3 span{font-size: 1.3rem !important;}
+}
+.h5, h5 {font-size: 1.25rem !important;}
+
+.mb-6, .my-6 {margin-bottom: 4.5rem!important;} .mt-6, .my-6 {margin-top: 4.5rem!important;}
+.pb-6, .py-6 {padding-bottom: 4.5rem!important;} .pt-6, .py-6 {padding-top: 4.5rem!important;}
+.mb-7, .my-7 {margin-bottom: 6.5rem!important;} .mt-7, .my-7 {margin-top: 6.5rem!important;}
+.pb-7, .py-7 {padding-bottom: 6.5rem!important;} .pt-7, .py-7 {padding-top: 6.5rem!important;}
+
+/********** BUTTONS & TRIGGERS **********/
+input[type="radio"], input[type="checkbox"], .custom-control-label{cursor: pointer;}
+button, button.active, button:hover{outline-style: none !important; box-shadow: none;}
+
+.btn{font-size: .95rem; font-weight: 300; -webkit-transition: .2s ease-in-out; transition: .2s ease-in-out; border-radius: 2px;}
+.btn-lg{font-size: 1rem; padding: .7rem 2.6rem;}
+
+.btn-1-outline-12{border: 1px rgb(79, 88 ,80) solid; background-color: white; color: rgb(59, 68, 60) !important;}
+.btn-1-outline-12:hover, .btn-1-outline-12:active{background-color: rgb(79, 88 ,80) !important; color:white !important;}
+
+.btn-12{border: 1px rgb(79, 88 ,80) solid; background-color: rgb(79, 88 ,80); color: white !important;}
+.btn-12:hover, .btn-12:active{background-color: rgb(59, 68 ,60) !important;}
+.btn-2{border: 1px rgb(101, 143, 140) solid; background-color: rgb(101, 143, 140); color: white !important;}
+.btn-2:hover, .btn-2:active{background-color: rgb(72, 100, 98) !important;}
+.btn-6{border: 1px rgb(75, 97, 74) solid; background-color: rgb(75, 97, 74); color: white !important;}
+.btn-6:hover, .btn-6:active{background-color: rgb(52, 70, 51) !important;}
+.btn-outline-1{border: 1px rgb(251, 247, 231) solid; color: white !important;}
+.btn-outline-1:hover, .btn-outline-1:active{background-color: rgba(255, 255, 255, .8) !important; color: rgb(14, 17, 15) !important;}
+.btn-outline-12{border: 1px rgb(79, 88 ,80) solid; color: rgb(79, 88 ,80) !important;}
+.btn-outline-12:hover, .btn-outline-12:active{background-color: rgb(79, 88 ,80) !important; color:white !important;}
+
+
+/**********  TEXT TO SIZE **********/
+.open-it-trigger{cursor: pointer; opacity: .9;}
+.open-it-trigger:hover{opacity: 1;}
+
+
+
+/********** NAVBAR **********/
+.navbar{box-shadow: 0 0 .5rem rgba(0, 0, 0, .15);}
+.navbar.navbar-dark{background-color: rgb(61, 69, 62);}
+.navbar.navbar-light{background-color:white;}
+.navbar-brand img{height: 35px;}
+.navbar-nav .nav-link {
+    padding: .8rem 1rem !important;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+    border-bottom: .2rem rgb(32, 181, 121) solid;
+    padding-bottom: .4rem !important;
+}
+.navbar .dropdown-menu{margin-top: 8px !important; border-radius: 0;}
+@media (max-width: 575.98px) {.navbar .navbar-collapse{padding-top: 12px !important;}}
+
+
+
+/********** FOOTER **********/
+footer{min-height: 110px; margin-top: -115px; box-shadow: 1px 0px 3px rgba(0,0,0,.25); position: relative; z-index: 1;}
+footer img{opacity: .85;}
+footer .copyright p{font-size: .85em;}
+footer .copyright a{font-size: 1em;}
+footer .copyright a:hover{color: rgb(131, 117, 95);}
+footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
+
+
+
+
+
+/********** CONTACT **********/
+
+.contact .contact-header{
+    min-height: 360px;
+    background: url('/images/contact/les-arroseurs-paysagiste-bordeaux.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    background-position: bottom; background-position-y: 260%;
+    background-attachment: fixed;
+}
+.contact .contact-header > div{
+    background: url('/images/contact/contact-jardin-bordeaux.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 5%;
+    background-size: 140px;
+}
+.contact .contact-header h1{font-size: .85rem !important; border-bottom: 1px rgba(255, 255, 255, .25) solid; letter-spacing: 2px;}
+.contact .contact-header h2{font-size: 2.8rem !important; text-shadow: 0 0 6px rgba(0, 0, 0, .25);}
+.contact .contact-header p{text-shadow: 0 0 3px rgba(0, 0, 0, .35); font-size: 1.1rem;}
+@media (max-width: 991.98px) {
+    .contact .contact-header h2{font-size: 2.4rem !important;}
+    .contact .contact-header p{font-size: .95rem;}
+}
+@media (max-width: 575.98px) {
+    .contact .contact-header h2{font-size: 2.2rem !important;}
+    .contact .contact-header p{font-size: .9rem;}
+}
+.contact form{max-width: 460px;}
+.contact form .rgpd-mention, .contact form .rgpd-mention a, .contact form .rgpd-mention b{font-size: .75rem;}
+.contact-form-section p, .contact-form-section p span{font-size: .8rem; line-height: 135%;}
+.contact h6{font-size: .8rem}
+#contactInfosBlock{
+    background: url('/images/contact/jardin-paysage-gironde.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 65%;
+    background-size: 230px;
+}
+
+#contactFormsMenu li{font-size: .9em; line-height: 105%; opacity: .6; cursor: pointer;}
+.contact-form-menu-separator{border-bottom: 1px rgb(240, 240, 240) solid; margin-top: -2px;}
+#contactFormsMenu li:hover, #contactFormsMenu li.active{opacity: 1;}
+#contactFormsMenu li.active{cursor: default;}
+#contactFormsMenu li.active h3 b{color: rgb(72, 100, 98) /*t2-1-clr*/;}
+#contactFormsMenu li > span{width: 30px; height: 3px;}
+#contactFormsMenu li.active > span{background-color: rgb(72, 100, 98) /*t2-1-clr*/;}
+
+#contactFormsMenu li h3{font-size: 1rem !important;}
+@media (max-width: 575.98px) {
+    #contactFormsMenu li h3{font-size: .9rem !important;}
+}
+#formResultModal .modal-header button span{font-size: 1.5rem; font-weight: 700;}
+#formResultModal .modal-body p.t1-4-clr, #formResultModal .modal-body p.t1-4-clr span{font-size: .8rem;}
+
+
+@media (min-width: 768px) {
+    .index-header{
+        background: url('/images/index/paysagiste-bordeaux-conception-jardin.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+.index-header-container{
+    background: url('/images/index/paysagiste-bordeaux-amenagement-jardin.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********** GENERAL **********/
+    .main-txt{font-family: lato-light; line-height: 145%; font-size: 1.4rem !important;}
+
+
+
+/********** NOUS **********/
+    #nous .img.constance{background: url(/images/constance/constance-0.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #nous .img.constance:hover{background: url(/images/constance/constance-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    /* #nous .img.constance{background: url(/images/constance/constance-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;} */
+    #nous .img.guillaume{background: url(/images/guillaume/guillaume-0.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #nous .img.guillaume:hover{background: url(/images/guillaume/guillaume-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #nous .img > div{min-height: 290px; border: 8px double white;}
+
+
+/********** PHOTOS **********/
+    #photos > div{background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255 , 255, 255, 0) 3%, rgba(255 , 255, 255, 1) 80%, rgba(255 , 255, 255, 1) 100%)}
+    #photos .carousel-inner-wrapper{border: 1px rgb(178, 178, 175) solid;}
+    #photos .carousel-inner{border: 10px white solid;}
+    #photos .carousel-item, #photos .carousel-item > div > div{height: 480px;}
+    #photos .carousel-item.carousel-itel-double-content > div{width: 50%; display: inline-block;}
+    #photos .carousel-item.carousel-itel-double-content > div:first-child > div{border-right: 10px white solid;}
+
+    #photos .carousel-item .cg-1{background: url(/images/constance-et-guillaume/cg-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-2-1{background: url(/images/constance-et-guillaume/cg-2-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-2-2{background: url(/images/constance-et-guillaume/cg-2-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-3{background: url(/images/constance-et-guillaume/cg-3.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-4{background: url(/images/constance-et-guillaume/cg-4.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-5-1{background: url(/images/constance-et-guillaume/cg-5-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-5-2{background: url(/images/constance-et-guillaume/cg-5-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-6{background: url(/images/constance-et-guillaume/cg-6.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-7-1{background: url(/images/constance-et-guillaume/cg-7-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-7-2{background: url(/images/constance-et-guillaume/cg-7-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-8{background: url(/images/constance-et-guillaume/cg-8.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-9-1{background: url(/images/constance-et-guillaume/cg-9-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-9-2{background: url(/images/constance-et-guillaume/cg-9-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-10{background: url(/images/constance-et-guillaume/cg-10.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-11-1{background: url(/images/constance-et-guillaume/cg-11-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-11-2{background: url(/images/constance-et-guillaume/cg-11-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-12-1{background: url(/images/constance-et-guillaume/cg-12-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-12-2{background: url(/images/constance-et-guillaume/cg-12-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-13-1{background: url(/images/constance-et-guillaume/cg-13-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-13-2{background: url(/images/constance-et-guillaume/cg-13-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-14-1{background: url(/images/constance-et-guillaume/cg-14-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-14-2{background: url(/images/constance-et-guillaume/cg-14-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-15-1{background: url(/images/constance-et-guillaume/cg-15-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-15-2{background: url(/images/constance-et-guillaume/cg-15-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-16-1{background: url(/images/constance-et-guillaume/cg-16-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-16-2{background: url(/images/constance-et-guillaume/cg-16-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-17-1{background: url(/images/constance-et-guillaume/cg-17-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #photos .carousel-item .cg-17-2{background: url(/images/constance-et-guillaume/cg-17-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
+    #photos .carousel-control{color: rgb(111, 115, 108) !important; opacity: .75; width:100%}
+    #photos .carousel-control:hover, .carousel-control:active{color: rgb(111, 115, 108) !important; opacity: 1;}
+    #photos .carousel-control svg{height: 2rem;}
+
+    .carousel-indicators{bottom: -70px;}
+    .carousel-indicators li{
+        border-radius: 51%;
+        height: 20px; width: 20px;
+        border: 1px rgb(111, 115, 108) solid;
+        color: rgb(111, 115, 108);
+        text-indent: 0px;
+        font-size: .8rem;
+        font-weight: bold;
+        text-align: center;
+        opacity: .8;
+    }
+    .carousel-indicators li.hover{opacity: 1;}
+    .carousel-indicators li.active{color: white; background-color: rgb(28, 156, 105); text-shadow: -1px 1px 1px rgb(19, 110, 74);}
+
+
+
+/********** PROGRAMME **********/
+    #programme .serious-font{font-family: 'Arial', Times, serif; font-weight: bold;}
+    #programme h3{min-width: 280px; font-size: 1.8rem !important; border-bottom: 1px solid rgb(190, 190, 190);}
+    #programme .programme-card .time-pane{
+        padding: .5rem 1.8rem;
+        margin-left: -2rem;
+        margin-top: -5rem;
+        margin-bottom: -3rem;
+        position: relative;
+        z-index: 1;
+    }
+    #programme .programme-card .time-pane span{font-size: 1.2rem;}
+    #programme .programme-card p{font-size: .9rem; line-height: 115%;}
+    #programme .programme-card ul{list-style: none; padding-left: 0; font-size: .8rem;}
+    #programme .programme-card ul li b, #programme .programme-card .info-block ul li a{font-size: .8rem;}
+
+
+
+/********** THEME **********/
+    #theme{
+        background: url(/images/theme/sauvage.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+    #theme section{background: linear-gradient(180deg, rgba(14, 17, 15,.9) 0%, rgba(0,0,0,0) 17%, rgba(0,0,0,0) 25%, rgba(14, 17, 15 , .8) 40%, rgba(14, 17, 15 , 1) 80%, rgba(14, 17, 15 , 1) 100%);}
+    #theme p{line-height: 125%;}
+    #theme p.main-txt{
+        max-width : 1000px;
+    }
+
+    #theme #dress svg{height: 1rem; margin-right: .3rem; margin-bottom: .4rem;}
+    #theme #dress p{font-size: .9rem;}
+    #theme #dress > div > div > div{height: 160px}
+    #theme #dress .block-1 > div{
+        background: url(/images/theme/savane.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+    #theme #dress .block-2 > div{
+        background: url(/images/theme/bananiers.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+    #theme #dress .block-3 > div{
+        background: url(/images/theme/tigre.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+    #theme #dress .block-4 > div{
+        background: url(/images/theme/nature.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+    #theme #dress .block-6 > div{
+        background: url(/images/theme/fleurs.jpg);
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    }
+
+
+    #theme #music ul{list-style-type: none; padding-left: 0;}
+    #theme #music a:hover{color: white !important;}
+    #theme #music ul svg{
+        height: 1rem;
+        margin-left: .3rem;
+        margin-bottom: .2rem;
+    }

@@ -1,0 +1,184 @@
+{ 
+    "websiteUrl": "https://www.lesarroseurs.fr",
+    "pagesUrls": {
+        "termsOfUse": "mentions-legales",
+        "contact": "contacter-les-arroseurs",
+        "contactForms": {"writeToUs": "nous-ecrire", "bookAppointment": "rdv-telephonique"},
+        "bordeaux": "zones-de-deplacement-bordeaux",
+        "crm": "projets-arrosage-et-paysage",
+        "team": {
+            "francois": "francois"
+        }
+    },
+    "googleReviews": {
+        "score": 5.0,
+        "sampleSize": 30
+    },
+    "urlParameters": {
+        "contact": {"writeToUs": "nous-ecrire", "bookAppointment": "rdv-telephonique"}
+    },
+    "outsidePagesUrls": {
+        "googleReviews": "https://g.page/les-arroseurs-bordeaux?gm"
+    },
+    "availableCities": [
+        {"name": "Ambarès-et-Lagrave", "zip": "33"},
+        {"name": "Andernos", "zip": "33"},
+        {"name": "Bordeaux", "zip": "33000"},
+        {"name": "Bassens", "zip": "33"},
+        {"name": "Bègles", "zip": "33"},
+        {"name": "Blanquefort", "zip": "33"},
+        {"name": "Bruges", "zip": "33"},
+        {"name": "Cadaujac", "zip": "33"},
+        {"name": "Caudéran", "zip": "33"},
+        {"name": "Canéjan", "zip": "33"},
+        {"name": "Cenon", "zip": "33"},
+        {"name": "Cestas", "zip": "33"},
+        {"name": "Eysines", "zip": "33"},
+        {"name": "Floirac", "zip": "33"},
+        {"name": "Lacanau", "zip": "33"},
+        {"name": "Le Bouscat", "zip": "33"},
+        {"name": "Le Haillan", "zip": "33"},
+        {"name": "Le Taillan-Médoc", "zip": "33"},
+        {"name": "Latresne", "zip": "33"},
+        {"name": "Lège-Cap-Ferret", "zip": "33"},
+        {"name": "Léognan", "zip": "33"},
+        {"name": "Libourne", "zip": "33"},
+        {"name": "Lormont", "zip": "33"},
+        {"name": "Martignas-sur-Jalle", "zip": "33"},
+        {"name": "Martillac", "zip": "33"},
+        {"name": "Mérignac", "zip": "33"},
+        {"name": "Pessac", "zip": "33"},
+        {"name": "Saint-Jean-d'Illac", "zip": "33"},
+        {"name": "Saint-Médard-d'Eyrans", "zip": "33"},
+        {"name": "Saint-Médard-en-Jalles", "zip": "33"},
+        {"name": "Talence", "zip": "33"},
+        {"name": "Villenave-d’Ornon", "zip": "33"}
+    ],
+    "mailer": {
+        "email": {
+            "ADMIN_NO_REPLY_EMAIL": "noreply@lesarroseurs.fr",
+            "ADMIN_NO_REPLY_EMAIL_TEMP": "noreply@lesarroseurs.fr",
+            "ADMIN_SUPPORT_EMAIL": "equipe@lesarroseurs.fr",
+            "ADMIN_CONTACT_EMAIL": "equipe@lesarroseurs.fr",
+            "ADMIN_EMAIL": "admin@lesarroseurs.fr",
+            "ADMIN_EMAIL_TEMP": "admin@lesarroseurs.fr"
+        },
+        "subject": {
+            "FOR_VISITOR__VISITOR_BOOKED_APPOINTMENT": "Les Arroseurs | Votre prise de rendez-vous",
+            "FOR_VISITOR__VISITOR_SENT_MESSAGE": "Les Arroseurs | Merci pour votre message",
+            "FOR_ADMIN__VISITOR_BOOKED_APPOINTMENT": "Un utilisateur demande un rendez-vous !",
+            "FOR_ADMIN__VISITOR_SENT_MESSAGE": "Un utilisateur vient de poster un message !"
+        }
+    },
+    "chat": {
+        "isActive": false
+    },
+    "promo": {
+        "isActive": false,
+        "amount": 50,
+        "name": "Promo mois de juin pluvieux"
+    },
+    "companyData": {
+        "companyName": "Les Arroseurs",
+        "companyBaseline": "Arrosage & Paysage",
+        "companyPunchline": "Et si on faisait un bout de jardin ensemble ?",
+        "webSite": "www.lesarroseurs.fr",
+        "webSiteUrl": "https://www.lesarroseurs.fr",
+        "legalForm": "Société à responsabilité limitée",
+        "legalFormAcronym": "SARL",
+        "siren": "878 434 232",
+        "siret": "878 434 232 00012",
+        "contact": {
+            "email": "equipe@lesarroseurs.fr",
+            "phone": "06 73 29 19 19",
+            "phone2": "05 57 89 71 95"
+        },
+        "address": {
+            "street": "67 rue Mestre",
+            "postalCode": "33200",
+            "city": "Bordeaux"
+        }
+    },
+    "services": {
+        "transformation": {
+            "id": 0,
+            "title": "(Re-)Design complet de jardin",
+            "funnySentence": "Cristina Córdula pour jardin. \"Tu es magnifique ma chérie !\"",
+            "expensiveLevel": null,
+            "maintainLevel": null,
+            "mainPageUrl": "contacter-les-arroseurs?service=transformation-de-jardin"
+        },
+        "maintain": {
+            "id": 1,
+            "title": "Entretien de jardin",
+            "funnySentence": "Le coiffeur du jardin",
+            "expensiveLevel": 1,
+            "maintainLevel": null,
+            "mainPageUrl": "entretien-de-jardin"
+        },
+        "grass": {
+            "id": 2,
+            "title": "Pelouse",
+            "funnySentence": "A l'anglaise : on préfère leur pelouse que leurs recettes",
+            "expensiveLevel": 3,
+            "maintainLevel": 2,
+            "mainPageUrl": "pelouse-et-gazon"
+        },
+        "woodenDeck": {
+            "id": 3,
+            "title": "Terrasse en bois",
+            "funnySentence": "Sortez les transats",
+            "expensiveLevel": 3,
+            "maintainLevel": 1,
+            "mainPageUrl": "terrasse-en-bois"
+        },
+        "wood": {
+            "id": 4,
+            "title": "Prestations bois",
+            "funnySentence": "En cas de pépin, vous pourrez toucher du bois",
+            "expensiveLevel": 2,
+            "maintainLevel": 1,
+            "mainPageUrl": "contacter-les-arroseurs?service=prestations-bois"
+        },
+        "massif": {
+            "id": 5,
+            "title": "Massifs à thème",
+            "funnySentence": "Plus besoin de voyager pour voyager",
+            "expensiveLevel": 2,
+            "maintainLevel": 2,
+            "mainPageUrl": "contacter-les-arroseurs?service=massif"
+        },
+        "vegetation": {
+            "id": 6,
+            "title": "Végétalisation",
+            "funnySentence": "Des magnoliaaaas, par centaaaaaaiiines",
+            "expensiveLevel": 1,
+            "maintainLevel": 2,
+            "mainPageUrl": "contacter-les-arroseurs?service=vegetalisation"
+        },
+        "drivewayAndMineral": {
+            "id": 7,
+            "title": "Allées & Surfaces minérales",
+            "funnySentence": "Tassées comme jamais",
+            "expensiveLevel": 2,
+            "maintainLevel": 1,
+            "mainPageUrl": "contacter-les-arroseurs?service=allees-surfaces-minerales"
+        },
+        "watering": {
+            "id": 8,
+            "title": "Arrosage automatique",
+            "funnySentence": "Arrosez en claquant des doigts - © D. Copperfield",
+            "expensiveLevel": 2,
+            "maintainLevel": 1,
+            "mainPageUrl": "contacter-les-arroseurs?service=arrosage-automatique"
+        },
+        "lighting": {
+            "id": 9,
+            "title": "Éclairage",
+            "funnySentence": "Jardin de jour ou jardin de nuit : deux salles, deux ambiances",
+            "expensiveLevel": 1,
+            "maintainLevel": 1,
+            "mainPageUrl": "contacter-les-arroseurs?service=eclairage"
+        }
+    }
+}

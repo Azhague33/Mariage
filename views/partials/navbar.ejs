@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-expand-md <% if(pageKey == ""){ %> navbar-dark <% }else{ %> navbar-light <% } %>">
+    <div class="container">
+        <a class="navbar-brand py-0" href="<%- websiteUrl %>">
+            <img src="<% if(pageKey == ""){ %>images/logo/les-arroseurs-logo-bandeau-baseline-blanc.svg<% }else{ %>images/logo/les-arroseurs-logo-bandeau-baseline-bleu.svg<% } %>" alt="Logo Les Arroseurs">
+            <% if (isProduction == false) { %>
+                <span class="d-none d-lg-inline d-xl-none">LG</span>
+                <span class="d-none d-md-inline d-lg-none">MD</span>
+                <span class="d-none d-sm-inline d-md-none">SM</span>
+                <span class="d-sm-none">XS</span>
+            <% } %>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#nous">Nous</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#photos">Photos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#programme">Jour J</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#theme">Thème</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#rsvp">RSVP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#cadeau">Cadeau</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-target="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

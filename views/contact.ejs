@@ -1,0 +1,379 @@
+<%- include('partials/head.ejs', {
+    pageKey: pageKey,
+    title: "Paysagiste à Bordeaux - Contactez-nous | Les Arroseurs",
+    description: "Une question ? Un rendez-vous ? Les Arroseurs, paysagiste à Bordeaux et en Gironde, sont à votre écoute tous les jours du lundi au samedi. Contactez-nous.",
+    keywords: "Les Arroseurs, paysagiste, paysage, contact, rendez-vous, message, jardin, aménagement, bordeaux, gironde",
+    pageFullUrl: websiteUrl + '/' + pagesUrls.contact,
+    sharingImgUrl : "contact/expert-arrosage-paysage-bordeaux.jpg",
+    provideCss: true,
+    provideUiCss: true
+}) %>
+
+<div id="main" class="contact">
+    <div class="container-fluid t1-2-bg">
+        <div class="row contact-header d-flex align-items-stretch">
+            <div class="container d-flex align-items-center">
+                <div class="py-5 mx-auto text-center">
+                    <h1 class="mb-1 pb-1 px-4 d-inline-block font-weight-light text-uppercase t3-2-clr">Paysagiste à Bordeaux</h1>
+                    <h2 class="mb-sm-4 mb-0 font-weight-normal text-white">Contactez-nous</h2>
+                    <em class="h6 d-none d-sm-block font-weight-normal t3-3-clr">
+                        Même si à l'heure actuelle nous ne nous connaissons pas encore, il est évident que nous partons sur de bonnes bases :
+                        <br class="d-none d-lg-block"/>nous avons au moins une passion commune
+                    </em>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <div class="container py-5" id="contactInfosBlock">
+                <div class="row">
+                    <div class="contact-form-section col-12 col-md-8 mb-4" id="contactFormsGroup">
+                        <div class="row mb-4">
+                            <div class="col-lg-10 col-12">
+                                <ul class="row my-0 p-0" id="contactFormsMenu">
+                                    <li class="col-sm-6 col-4 pr-0 d-flex flex-column <% if(formToDisplay != urlParameters.contact.bookAppointment) { %>active<% } %>" data-form-to="0" data-target="#contactFormsGroup">
+                                        <h3 class="mb-3 text-uppercase"><b class="d-none d-sm-inline t1-4-clr">Envoyez-nous un message</b><b class="d-sm-none t1-4-clr">Message</b></h3>
+                                        <span class="mt-auto"></span>
+                                    </li>
+                                    <li class="col-sm-6 col-8 d-flex flex-column <% if(formToDisplay != urlParameters.contact.writeToUs && formToDisplay != null) { %>active<% } %>" data-form-to="1" data-target="#contactFormsGroup">
+                                        <h3 class="mb-3 text-uppercase"><b class="d-none d-sm-inline t1-4-clr">Rendez-vous téléphonique</b><b class="d-sm-none t1-4-clr">Rdv téléphonique</b></h3>
+                                        <span class="mt-auto"></span>
+                                    </li>
+                                </ul>
+                                <div class="contact-form-menu-separator"></div>
+                            </div>
+                        </div>
+
+                        <div class="row contact-form-containers">
+
+                        <%# SEND MESSAGE FORM %>
+                            <div class="col-12 contact-form-container <% if(formToDisplay != urlParameters.contact.writeToUs && formToDisplay != null) { %>not-displayed<% } %>">
+                                <p class="mb-4 t1-4-clr">
+                                    Vous allez faire "poper" la messagerie de Constance ou Guillaume, vos paysagistes certainement en train de travailler sur un projet d'aménagement de jardin. 
+                                    Ou planifier un dépannage d'arrosage automatique peut-être. Ou renseigner un de nos clients. Ou encore en train de boire un café. 
+                                    Cela vous fait au moins 4 bonnes raisons de nous écrire 😁
+                                </p>
+                                <form class="needs-validation" action="<%- '/' + pagesUrls.contact + '/' + pagesUrls.contactForms.writeToUs %>" id="sendMessageForm" method="POST" novalidate>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label class="font-weight-bold t2-2-clr" for="sendMessageForm_city">Commune</label>
+                                            <select class="form-control" id="sendMessageForm_city" name="sendMessageForm_city">
+                                                <option value="" class="t4-2-clr">Choisissez&hellip;</option>
+                                                <% for(var i = 0; i < availableCities.length; i++) { %>
+                                                    <%- '<option value="' + availableCities[i].name + '">' + availableCities[i].name + '</option>' %>
+                                                <% } %>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label class="font-weight-bold t2-2-clr" for="sendMessageForm_city">Email <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <input type="email" class="form-control" id="sendMessageForm_email" name="sendMessageForm_email" placeholder="Saisissez votre email" required/>
+                                            <div class="invalid-tooltip">Nous avons besoin d'une adresse email au bon format pour vous répondre 🙂</div>
+                                        </div>
+                                        <div class="col-12 form-group mt-md-2">
+                                            <label class="font-weight-bold t2-2-clr" for="sendMessageForm_message">Votre message <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <textarea 
+                                                class="form-control" id="sendMessageForm_message" name="sendMessageForm_message" rows="5" 
+                                                placeholder="Prise de contact, demande de devis, question, conseil&hellip;" 
+                                                required
+                                            ></textarea>
+                                            <div class="invalid-tooltip">Pour vous diriger vers la bonne personne, nous aimerions connaître la raison de votre prise de contact 😮</div>
+                                        </div>
+                                        <div class="col-12 not-displayed"><input type="hidden" value="null" name="sendMessageForm_referer" id="sendMessageForm_referer"/></div>
+                                        <div class="col-12">
+                                            <p class="d-block mb-5 t2-4-clr rgpd-mention">
+                                                <i>Le traitement de vos données respecte à la lettre le RGPD</i> 👮‍♂️
+                                                <i><br/>Plus d'informations : <a class="t2-4-clr" href="<%- pagesUrls.termsOfUse %>" target="_blank">cliquez ici</a> (rubrique <b class="t2-4-clr">Vos droits</b>).</i>
+                                            </p>
+                                            <button type="submit" class="btn btn-2 px-4">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        <%# PHONE RDV FORM %>
+                            <div class="col-12 contact-form-container <% if(formToDisplay != urlParameters.contact.bookAppointment) { %>not-displayed<% } %>">
+                                <p class="mb-4 t1-4-clr">
+                                    Du lundi au samedi (inclus) entre 8h30 et 19h30, Guillaume ou Constance se chargent de vous rappeler quand vous voulez. Cela peut être très pratique 
+                                    pour vous enfuir d'un dîner ennuyeux. Ou alors si vous avez besoin d'aide pour votre jardin 🏡
+                                </p>
+                                <form class="needs-validation" action="<%- '/' + pagesUrls.contact + '/' + pagesUrls.contactForms.bookAppointment %>" id="bookPhoneAppointment" method="POST" novalidate>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label class="font-weight-bold t2-2-clr" for="bookPhoneAppointment_date">Date <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <input type="text" class="form-control inpt-date" id="bookPhoneAppointment_date" name="bookPhoneAppointment_date" placeholder="Entrez votre date" required/>
+                                            <div class="invalid-tooltip">Indiquez-nous la date à laquelle vous souhaitez qu'on vous appelle 😮</div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 form-group">
+                                            <label class="font-weight-bold t2-2-clr" for="bookPhoneAppointment_hours">Heure <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <div class="row">
+                                                <div class="col-5 pr-2">
+                                                    <select class="form-control" id="bookPhoneAppointment_hours" name="bookPhoneAppointment_hours" required>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12" selected>12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-1 d-flex align-items-center justify-content-center px-0"><span class="t1-5-clr">h</span></div>
+                                                <div class="col-5 pl-2">
+                                                    <select class="form-control" id="bookPhoneAppointment_minutes" name="bookPhoneAppointment_minutes" required>
+                                                        <option value="00" selected>00</option><option value="15">15</option><option value="30">30</option><option value="45">45</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 form-group mt-md-2">
+                                            <label class="font-weight-bold t2-2-clr" for="bookPhoneAppointment_email">Email <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <input type="email" class="form-control" id="bookPhoneAppointment_email" name="bookPhoneAppointment_email" placeholder="Saisissez votre email" required/>
+                                            <div class="invalid-tooltip">Nous avons besoin d'une adresse email au bon format pour vous confirmer votre rendez-vous 🙂</div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 form-group mt-md-2">
+                                            <label class="font-weight-bold t2-2-clr" for="bookPhoneAppointment_phone">Téléphone <span class="t7-3-clr" title="Champ obligatoire">*</span></label>
+                                            <input type="tel" class="form-control inpt-phone" id="bookPhoneAppointment_phone" name="bookPhoneAppointment_phone" placeholder="Saisissez votre téléphone" maxlength="19" required/>
+                                            <div class="invalid-tooltip">Nous avons besoin d'un numéro de téléphone au bon format pour vous appeler : 0x xx xx xx xx 😬</div>
+                                        </div>
+                                        <div class="col-12 not-displayed"><input type="hidden" value="null" name="bookPhoneAppointment_referer" id="bookPhoneAppointment_referer"/></div>
+                                        <div class="col-12">
+                                            <p class="d-block mb-5 t2-4-clr rgpd-mention">
+                                                <i>Le traitement de vos données respecte à la lettre le RGPD</i> 👮‍♂️
+                                                <i><br/>Plus d'informations : <a class="t2-4-clr" href="<%- pagesUrls.termsOfUse %>" target="_blank">cliquez ici</a> (rubrique <b class="t2-4-clr">Vos droits</b>).</i>
+                                            </p>
+                                            <button type="submit" class="btn btn-2 px-4">Programmer</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 d-none d-lg-flex"></div>
+
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0 mt-5 mt-md-0 pt-4 pb-5 t1-6-bg">
+                        <div class="mb-5">
+                            <h6 class="mb-1 text-uppercase t6-2-clr">Email</h6>
+                            <a class="t1-2-clr" href="mailto:<%- companyData.contact.email %>" target="blank"><%- companyData.contact.email %></a>
+                        </div>
+                        <div class="mb-5">
+                            <h6 class="mb-1 text-uppercase t6-2-clr">Téléphone</h6>
+                            <span class="t1-2-clr d-none d-sm-inline"><%- companyData.contact.phone %></span>
+                            <a class="t1-2-clr d-sm-none" href="tel:<%- companyData.contact.phone.replace(/ /g, '') %>"><%- companyData.contact.phone %></a>
+                            <br/><em class="font-weight-light t1-3-clr">Du lundi au samedi, de 8h30 à 19h30</em>
+                        </div>
+                        <div class="mb-5">
+                            <h6 class="mb-1 text-uppercase t6-2-clr">Adresse</h6>
+                            <address class="t1-2-clr">
+                                <b class="t1-2-clr"><%- companyData.companyName %></b>
+                                <br/><%- companyData.address.street %>, <%- '<span class="keep">' + companyData.address.postalCode + '</span> ' + companyData.address.city %>
+                            </address>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 text-uppercase t6-2-clr">Vos paysagistes vous rappellent</h6>
+                            <p class="m-0">Programmez votre rdv <span class="keep">téléphonique :</span> cliquez <span class="link t2-2-clr" data-form-to="1" data-target="#contactFormsGroup">juste ici</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if(formResult != null) { %>
+<div class="modal fade" tabindex="-1" role="dialog" id="formResultModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <% if(formResult == 'messageSent') { %>
+                        Message envoyé 👌
+                    <% } else if(formResult == 'appointmentBooked') { %>
+                        RDV Téléphonique programmé 🕙
+                    <% } else if(formResult == 'messageNotSent' || formResult == 'appointmentNotBooked') { %>
+                        Catastrophe ! Une erreur s'est produite 😱
+                    <% } %>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="t1-2-clr">
+                    <% if(formResult == 'messageSent') { %>
+                        Votre message nous a bien été envoyé. Nous allons vous répondre dans les meilleurs délais.
+                    <% } else if(formResult == 'appointmentBooked') { %>
+                        Votre rendez-vous téléphonique est programmé. Nous vous appellerons à la date et l'heure programmées.
+                    <% } else if(formResult == 'messageNotSent' || formResult == 'appointmentNotBooked') { %>
+                        Nous vous serions infiniment reconnaissant de bien vouloir nous contacter directement ; d'une part pour pouvoir répondre à votre demande, 
+                        et d'autre part pour pouvoir corriger ce satané <span class="keep t1-2-clr">problème !</span>
+                        <br/>
+                        <h6 class="m-0 text-center t1-2-clr"><%- companyData.contact.phone %></h6>
+                        <br/>
+                        <br/>Merci beaucoup.
+                        <br/>PS : Pour nous faire pardonner, on vous offre une plante, promis 🌱
+                    <% } %>
+                </p>
+
+                <% if(formResult == 'messageSent' || formResult == 'appointmentBooked') { %>
+                    <p class="mb-1 t1-4-clr">Un email de confirmation vous a été envoyé.</p>
+                    <p class="m-0 t1-4-clr">
+                        Si ça n'est pas le cas, même après avoir attendu 10 minutes et vérifié vos Spam, 
+                        n'hésitez pas à nous contacter pour vous assurer que votre demande a bien été <span class="keep t1-4-clr">enregistrée : <%- companyData.contact.phone %></span>
+                    </p>
+                <% } %>
+            </div>
+            <div class="modal-footer">
+                <a href="/" class="btn btn-2 px-4">Retour à l'accueil</a>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>
+
+<%- include('partials/foot.ejs', {
+    pageKey: pageKey,
+    provideGeneralJs: true, 
+    provideUiJs: true
+}) %>
+
+<script defer>
+    var sendMessageForm = $("form#sendMessageForm");
+    var bookPhoneAppointmentForm = $("form#bookPhoneAppointment");
+
+    const windowURL = window.location.href;
+    const urlRefererTab = windowURL.split("ref=");
+
+    if(urlRefererTab.length > 1) {
+        $("input#sendMessageForm_referer").val(urlRefererTab[1].split("&")[0]);
+        $("input#bookPhoneAppointment_referer").val(urlRefererTab[1].split("&")[0]);
+        resetUrl("&ref=");
+        resetUrl("ref=");
+    }
+
+    <% if(formResult != null) { %>
+        resetUrl("&formResult=");
+        resetUrl("formResult=");
+    <% } %>
+    <% if(location != null) { %>
+        $("select[name='sendMessageForm_city'] option[value='<%- decodeURI(location) %>']").prop("selected", true);
+    <% } %>
+
+    function handleFormsDisplay(trig, speed) {
+        const trigger = $(trig);
+        const formsGroup = $(trigger.attr("data-target"));
+        const slideNbToDisplay = Number(trigger.attr("data-form-to"));
+        const formMenuLis = formsGroup.find("#contactFormsMenu li");
+
+        if($(formMenuLis[slideNbToDisplay]).hasClass("active")) {
+            return ;
+        } else {
+            const formBlock = formsGroup.find(".contact-form-containers");
+            const formBlocks = formsGroup.find(".contact-form-container");
+
+            $(formMenuLis).removeClass("active");
+            $(formMenuLis[slideNbToDisplay]).addClass("active");
+
+            formBlock.css("min-height", formBlock.outerHeight());
+            hide(formBlocks[0]);
+            hide(formBlocks[1]);
+            displaySmoothly(formBlocks[slideNbToDisplay], speed, null);
+        }
+    }
+
+    $("document").ready(function() {
+        
+        <% if(formResult != null) { %>
+            $('#formResultModal').modal('show');
+        <% } %>
+
+        $("[data-target='#contactFormsGroup']").click(function() {
+            handleFormsDisplay(this, 500);
+        });
+
+        $("input[name='bookPhoneAppointment_date']").datepicker({
+            dateFormat: 'D d MM yy',
+            minDate: 0,
+            beforeShowDay: function(date) {
+                var day = date.getDay();
+                return [(day != 0), ''];
+            },
+            closeText: 'Fermer',
+            prevText: 'Précédent',
+            nextText: 'Suivant',
+            currentText: 'Aujourd\'hui',
+            monthNames: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+            monthNamesShort: ['janv.', 'févr.', 'mars', 'avril', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'],
+            dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+            dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+            dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+            weekHeader: 'Sem.'
+        });
+
+        sendMessageForm.submit(function submitSendMessageForm(e) {
+            e.preventDefault();
+
+            const button = sendMessageForm.find("button[type='submit']");
+
+            sendMessageForm.find(".is-invalid").removeClass("is-invalid");
+            allowElt(button, false, false);
+
+            const city = sendMessageForm.find("input[name='sendMessageForm_city']");
+            const email = sendMessageForm.find("input[name='sendMessageForm_email']");
+            const message = sendMessageForm.find("textarea[name='sendMessageForm_message']");
+
+            if(!isInputFilled(email) || !isInputFilled(message)) {
+                sendMessageForm.addClass("was-validated");
+                allowElt(button, true, false);
+                return ;
+            }
+
+            if(!isEmail(email.val())) {
+                email.addClass("is-invalid");
+                allowElt(button, true, false);
+                return ;
+            }
+
+            sendMessageForm.unbind("submit", submitSendMessageForm);
+            sendMessageForm.submit();
+        });
+
+        bookPhoneAppointmentForm.submit(function submitBookPhoneAppointmentForm(e) {
+            e.preventDefault();
+
+            const button = bookPhoneAppointmentForm.find("button[type='submit']");
+
+            bookPhoneAppointmentForm.find(".is-invalid").removeClass("is-invalid");
+            allowElt(button, false, false);
+
+            const date = bookPhoneAppointmentForm.find("input[name='bookPhoneAppointment_date']");
+            const phone = bookPhoneAppointmentForm.find("input[name='bookPhoneAppointment_phone']");
+            const email = bookPhoneAppointmentForm.find("input[name='bookPhoneAppointment_email']");
+
+            if(!isInputFilled(date) || !isInputFilled(phone) || !isInputFilled(email)) {
+                bookPhoneAppointmentForm.addClass("was-validated");
+                allowElt(button, true, false);
+                return ;
+            }
+            
+            if(!isPhone(phone.val()) || !isEmail(email.val())) {
+                if(!isPhone(phone.val())) {
+                    phone.addClass("is-invalid");
+                    allowElt(button, true, false);
+                }
+                if(!isEmail(email.val())) {
+                    email.addClass("is-invalid");
+                    allowElt(button, true, false);
+                }
+                return ;
+            }
+
+            bookPhoneAppointmentForm.unbind("submit", submitBookPhoneAppointmentForm);
+            bookPhoneAppointmentForm.submit();
+        });
+    });
+</script>

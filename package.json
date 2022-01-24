@@ -1,0 +1,40 @@
+{
+    "name": "mariage",
+    "version": "0.1.0",
+    "description": "An app for Les arroseurs",
+    "author": "Guillaume <guillaume.tetart@gmail.com>",
+    "engines": {
+        "node": "~9"
+    },
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "~1.19",
+        "compression": "~1.7",
+        "cookie-session": "~1",
+        "ejs": "~3.0",
+        "express": "^4.17",
+        "fs": "0.0.1-security",
+        "helmet": "~3.22",
+        "heroku-ssl-redirect": "^0.1.1",
+        "nodemailer": "~6.4",
+        "npm": "^6.14.11",
+        "querystring": "~0.2",
+        "serve-favicon": "~2.5",
+        "showdown": "^1.9.1",
+        "zlib": "~1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Azhague33/Mariage"
+    },
+    "keywords": [
+        "node",
+        "heroku",
+        "express"
+    ],
+    "license": "MIT"
+}

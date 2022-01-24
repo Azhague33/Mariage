@@ -1,0 +1,57 @@
+
+<%- include('footer.ejs') %>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script defer>
+        const whiteScreen = document.getElementById("whiteScreen");
+        setTimeout(function() {
+            whiteScreen.style.opacity = 0;
+            setTimeout(function() {whiteScreen.remove();}, 1000);
+        }, 300);
+        
+        const sections = $("section.nav-section");
+        var sectionsPosDatas = [];
+        for(var i=0; i<sections.length; i++) {
+            sectionsPosDatas[i] = {};
+            sectionsPosDatas[i].id = $(sections[i]).attr("id");
+            sectionsPosDatas[i].position = $(sections[i]).position().top;
+
+        }
+
+        function updateNavCss() {
+            var currentPos = window.scrollY + 50;
+
+            for(var i=1; i<sectionsPosDatas.length; i++) {
+                if(currentPos > sectionsPosDatas[i-1].position && currentPos < sectionsPosDatas[i].position) {
+                    $("nav .navbar-nav .active").removeClass("active");
+                    $("nav .navbar-nav a[data-target='#" + sectionsPosDatas[i-1].id + "']").addClass("active");
+                }
+            }
+        }
+
+        $(document).ready(function() {
+            $('#carouselPhotos').carousel('pause');
+            updateNavCss();
+
+
+            $(window).scroll(function() {updateNavCss();})
+
+            $('nav #navbarNavDropdown a').on('click', function(e) {
+                e.preventDefault();
+                var trigger = $(this);
+                var target = trigger.attr("data-target");
+
+                reachByScrolling(target, 0, 1000, function() {
+                    resetUrl("/#");
+                    resetUrl("#");
+                    return;
+                });
+            })
+        });
+    </script>
+
+</body>
+</html>
