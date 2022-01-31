@@ -20,8 +20,16 @@
     src: url('fonts/Rochester/rochester-Regular.ttf');
 }
 @font-face {
-    font-family: debby;
-    src: url('fonts/debby/Debby.ttf');
+    font-family: uni-sans;
+    src: url('fonts/uni-sans/uni-sans-semibold.otf');
+}
+@font-face {
+    font-family: uni-sans-bold;
+    src: url('fonts/uni-sans/uni-sans-bold.otf');
+}
+@font-face {
+    font-family: uni-sans-heavy;
+    src: url('fonts/uni-sans/uni-sans-heavy.otf');
 }
 
 /********** VOLUMES **********/
@@ -47,8 +55,8 @@ body, p, a, address, span, strong, div, li, .form-control::placeholder, .txt-quo
 .s-2{font-size: 1rem;}
 .close span{font-size: 1.5rem !important;}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span{font-weight: light; font-family: rochester; color: rgb(53, 59, 54);}
-h3, h4, h5, h6, .h3, .h4, .h5, .h6, h3 span, h4 span, h5 span, h6 span, .h3 span, .h4 span, .h5 span, .h6 span{font-family: debby;}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span{font-weight: light; color: rgb(53, 59, 54);}
+
 
 .font-weight-light{font-weight: 300;}
 .font-weight-v-light{font-weight: 200;}
@@ -79,8 +87,6 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6, h3 span, h4 span, h5 span, h6 span, .h3 span
 .t2-4-clr{color: rgb(75, 226, 166);} .t2-4-bg{background-color: rgb(75, 226, 166);}
 .t2-5-clr{color: rgb(160, 253, 216) !important;} .t2-5-bg{background-color: rgb(160, 253, 216) !important;}
 .t2-57str-bg{background: repeating-linear-gradient(45deg,rgb(32, 181, 121), rgb(19, 110, 74) 1px, rgb(19, 110, 74) 2px,rgb(32, 181, 121) 5px);}
-
-
 .t42-31str-bg{background: repeating-linear-gradient(65deg,rgb(19, 110, 74),rgb(24, 148, 98) 1px,rgb(24, 148, 98) 2px,rgb(19, 110, 74) 5px);}
 
 /* BROWN */
@@ -116,8 +122,7 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6, h3 span, h4 span, h5 span, h6 span, .h3 span
 .shadow-1{box-shadow: 0rem .125rem .2rem rgba(0,0,0,.25) !important;}
 .shadow-2{box-shadow: 0rem .125rem .14rem rgba(0,0,0,.14) !important;}
 
-h1, .h1, h1 span, .h1 span{font-size: 5.4rem !important;}
-h2, .h2, h2 span, .h2 span{font-size: 4rem !important;}
+h2, .h2, h2 span, .h2 span{font-size: 2.5rem !important;}
 h3, .h3, h3 span, .h3 span{font-size: 3rem !important;}
 @media (max-width: 991.98px) {
     h1, .h1, h1 span, .h1 span{font-size: 4.1rem !important;}
@@ -140,6 +145,8 @@ h3, .h3, h3 span, .h3 span{font-size: 3rem !important;}
 .pb-6, .py-6 {padding-bottom: 4.5rem!important;} .pt-6, .py-6 {padding-top: 4.5rem!important;}
 .mb-7, .my-7 {margin-bottom: 6.5rem!important;} .mt-7, .my-7 {margin-top: 6.5rem!important;}
 .pb-7, .py-7 {padding-bottom: 6.5rem!important;} .pt-7, .py-7 {padding-top: 6.5rem!important;}
+
+
 
 /********** BUTTONS & TRIGGERS **********/
 input[type="radio"], input[type="checkbox"], .custom-control-label{cursor: pointer;}
@@ -199,92 +206,31 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 
-
-
-/********** CONTACT **********/
-
-.contact .contact-header{
-    min-height: 360px;
-    background: url('/images/contact/les-arroseurs-paysagiste-bordeaux.jpg');
-    background-repeat: no-repeat;
-    -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-position: bottom; background-position-y: 260%;
-    background-attachment: fixed;
-}
-.contact .contact-header > div{
-    background: url('/images/contact/contact-jardin-bordeaux.png');
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: 5%;
-    background-size: 140px;
-}
-.contact .contact-header h1{font-size: .85rem !important; border-bottom: 1px rgba(255, 255, 255, .25) solid; letter-spacing: 2px;}
-.contact .contact-header h2{font-size: 2.8rem !important; text-shadow: 0 0 6px rgba(0, 0, 0, .25);}
-.contact .contact-header p{text-shadow: 0 0 3px rgba(0, 0, 0, .35); font-size: 1.1rem;}
-@media (max-width: 991.98px) {
-    .contact .contact-header h2{font-size: 2.4rem !important;}
-    .contact .contact-header p{font-size: .95rem;}
-}
-@media (max-width: 575.98px) {
-    .contact .contact-header h2{font-size: 2.2rem !important;}
-    .contact .contact-header p{font-size: .9rem;}
-}
-.contact form{max-width: 460px;}
-.contact form .rgpd-mention, .contact form .rgpd-mention a, .contact form .rgpd-mention b{font-size: .75rem;}
-.contact-form-section p, .contact-form-section p span{font-size: .8rem; line-height: 135%;}
-.contact h6{font-size: .8rem}
-#contactInfosBlock{
-    background: url('/images/contact/jardin-paysage-gironde.png');
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: 65%;
-    background-size: 230px;
-}
-
-#contactFormsMenu li{font-size: .9em; line-height: 105%; opacity: .6; cursor: pointer;}
-.contact-form-menu-separator{border-bottom: 1px rgb(240, 240, 240) solid; margin-top: -2px;}
-#contactFormsMenu li:hover, #contactFormsMenu li.active{opacity: 1;}
-#contactFormsMenu li.active{cursor: default;}
-#contactFormsMenu li.active h3 b{color: rgb(72, 100, 98) /*t2-1-clr*/;}
-#contactFormsMenu li > span{width: 30px; height: 3px;}
-#contactFormsMenu li.active > span{background-color: rgb(72, 100, 98) /*t2-1-clr*/;}
-
-#contactFormsMenu li h3{font-size: 1rem !important;}
-@media (max-width: 575.98px) {
-    #contactFormsMenu li h3{font-size: .9rem !important;}
-}
-#formResultModal .modal-header button span{font-size: 1.5rem; font-weight: 700;}
-#formResultModal .modal-body p.t1-4-clr, #formResultModal .modal-body p.t1-4-clr span{font-size: .8rem;}
-
-
-@media (min-width: 768px) {
-    .index-header{
-        background: url('/images/index/paysagiste-bordeaux-conception-jardin.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-.index-header-container{
-    background: url('/images/index/paysagiste-bordeaux-amenagement-jardin.png');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
-
-
-
-
-
-
-
-
-
-
 /********** GENERAL **********/
+    h2, h2 span, .h2 span{font-family: rochester;}
+    h3, h4, h5, h6, .h3, .h4, .h5, .h6, h3 span, h4 span, h5 span, h6 span, .h3 span, .h4 span, .h5 span, .h6 span{font-family: uni-sans;}
     .main-txt{font-family: lato-light; line-height: 145%; font-size: 1.4rem !important;}
 
+
+
+/********** HEADER **********/
+    #accueil{background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228 ,1) 39%, rgb(218, 218, 218) 100%); background-attachment: fixed;}
+    #accueil .container > div{
+        padding-bottom: 8rem;
+        background: url('/images/constance-et-guillaume.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+    }
+    .header-container{border: 1px rgb(139, 126, 103) solid; border-top: none; border-left: none;}
+    h1, h1 span{font-family: uni-sans-bold; font-size: 6.5rem !important; line-height: 65%; letter-spacing: 0px;}
+    h1 span{font-size: 3.2rem !important;}
+    h1 small{font-size: 1.8rem; font-family: uni-sans; letter-spacing: 5px;}
+    #accueil h2{font-size: 1.8rem !important;}
+    #accueil h2.header-date{font-size: 4rem !important;}
+    #accueil .header-border{width: 70px; border-top: 3px rgb(233, 145, 14) double;}
+
+    
 
 
 /********** NOUS **********/
@@ -296,6 +242,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     #nous .img > div{min-height: 290px; border: 8px double white;}
 
 
+    
 /********** PHOTOS **********/
     #photos > div{background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255 , 255, 255, 0) 3%, rgba(255 , 255, 255, 1) 80%, rgba(255 , 255, 255, 1) 100%)}
     #photos .carousel-inner-wrapper{border: 1px rgb(178, 178, 175) solid;}
@@ -355,7 +302,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 /********** PROGRAMME **********/
-    #programme .serious-font{font-family: 'Arial', Times, serif; font-weight: bold;}
+    #programme .serious-font{font-family: uni-sans-bold;}
     #programme h3{min-width: 280px; font-size: 1.8rem !important; border-bottom: 1px solid rgb(190, 190, 190);}
     #programme .programme-card .time-pane{
         padding: .5rem 1.8rem;
@@ -386,26 +333,11 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     #theme #dress svg{height: 1rem; margin-right: .3rem; margin-bottom: .4rem;}
     #theme #dress p{font-size: .9rem;}
     #theme #dress > div > div > div{height: 160px}
-    #theme #dress .block-1 > div{
-        background: url(/images/theme/savane.jpg);
-        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    }
-    #theme #dress .block-2 > div{
-        background: url(/images/theme/bananiers.jpg);
-        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    }
-    #theme #dress .block-3 > div{
-        background: url(/images/theme/tigre.jpg);
-        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    }
-    #theme #dress .block-4 > div{
-        background: url(/images/theme/nature.jpg);
-        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    }
-    #theme #dress .block-6 > div{
-        background: url(/images/theme/fleurs.jpg);
-        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    }
+    #theme #dress .block-1 > div{background: url(/images/theme/savane.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #theme #dress .block-2 > div{background: url(/images/theme/bananiers.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #theme #dress .block-3 > div{background: url(/images/theme/tigre.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #theme #dress .block-4 > div{background: url(/images/theme/nature.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #theme #dress .block-6 > div{background: url(/images/theme/fleurs.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 
     #theme #music ul{list-style-type: none; padding-left: 0;}
