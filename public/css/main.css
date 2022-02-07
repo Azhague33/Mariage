@@ -94,7 +94,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 sp
 .t4-3-clr{color: rgb(211, 132, 12);} .t4-3-bg{background-color: rgb(211, 132, 12);}
 .t4-4-clr{color: rgb(255, 159, 15);} .t4-4-bg{background-color: rgb(255, 159, 15);}
 .t4-5-clr{color: rgb(255, 190, 93)} .t4-5-bg{background-color: rgb(255, 190, 93);}
-.t4-6-clr{color: rgb(255, 223, 175);} .t4-7-bg{background-color: rgb(255, 223, 175);}
+.t4-6-clr{color: rgb(255, 223, 175);} .t4-6-bg{background-color: rgb(255, 223, 175);}
+.t4-7-clr{color: rgb(255, 239, 215);} .t4-7-bg{background-color: rgb(255, 239, 215);}
 .t4-32str-bg{background: repeating-linear-gradient(-45deg,rgb(211, 132, 12),rgb(126, 83, 10) 1px,rgb(126, 83, 10) 2px,rgb(211, 132, 12) 5px);}
 
 /* DARK BROWN */
@@ -219,10 +220,10 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
         padding-bottom: 8rem;
         background: url('/images/constance-et-guillaume.png');
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: bottom left;
         background-size: contain;
     }
-    .header-container{border: 1px rgb(139, 126, 103) solid; border-top: none; border-left: none;}
+    .header-container{border: 1px rgb(139, 126, 103) solid; border-top: none; border-right: none;}
     h1, h1 span{font-family: uni-sans-bold; font-size: 6.5rem !important; line-height: 65%; letter-spacing: 0px;}
     h1 span{font-size: 3.2rem !important;}
     h1 small{font-size: 1.8rem; font-family: uni-sans; letter-spacing: 5px;}
@@ -303,7 +304,16 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 /********** PROGRAMME **********/
     #programme .serious-font{font-family: uni-sans-bold;}
-    #programme h3{min-width: 280px; font-size: 1.8rem !important; border-bottom: 1px solid rgb(190, 190, 190);}
+    #programme h3{min-width: 280px; font-size: 1.8rem !important;}
+    #programme .bar{border-bottom: 1px solid rgb(228, 224, 224); margin-top: -2px;}
+    #programMenu li{cursor: pointer; opacity: .5;}
+    #programMenu li:hover{opacity: .8;}
+    #programMenu li.active{opacity: 1;}
+    #programMenu li.active > span{background-color: rgb(24, 148, 98);}
+    #programMenu li > span{width: 60px; height: 4px;}
+
+
+
     #programme .programme-card .time-pane{
         padding: .5rem 1.8rem;
         margin-left: -2rem;
@@ -314,8 +324,8 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     }
     #programme .programme-card .time-pane span{font-size: 1.2rem;}
     #programme .programme-card p{font-size: .9rem; line-height: 115%;}
-    #programme .programme-card ul{list-style: none; padding-left: 0; font-size: .8rem;}
-    #programme .programme-card ul li b, #programme .programme-card .info-block ul li a{font-size: .8rem;}
+    #programme .programme-card td{font-size: .8rem; line-height: 150%;}
+    #programme .programme-card td b, #programme .programme-card .info-block td a{font-size: .8rem;}
 
 
 
@@ -328,6 +338,8 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     #theme p{line-height: 125%;}
     #theme p.main-txt{
         max-width : 1000px;
+        font-size: 1.1rem !important;
+        opacity: .8;
     }
 
     #theme #dress svg{height: 1rem; margin-right: .3rem; margin-bottom: .4rem;}
@@ -341,9 +353,21 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
     #theme #music ul{list-style-type: none; padding-left: 0;}
+    #theme #music li span{display: inline-block; vertical-align: middle;}
+    #theme #music li audio{height: 25px; width: 230px; opacity:.8; display: inline-block; vertical-align: middle;}
     #theme #music a:hover{color: white !important;}
     #theme #music ul svg{
         height: 1rem;
         margin-left: .3rem;
         margin-bottom: .2rem;
     }
+
+
+
+/********** CADEAU **********/
+ .cadeau-main-block{
+    max-width: 580px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, .25);
+ }
+ .cadeau-main-block > div{border: 2px rgb(236, 215, 182) dotted;}
+ .cadeau-main-block .cadeau-border{border: 1px rgb(156, 219, 195) solid; width: 50px;}

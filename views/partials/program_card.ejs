@@ -9,11 +9,11 @@
             <p class="t1-4-clr"><%- description %></p>
         </div>
         <div class="info-block">
-            <ul class="m-0">
+            <table>
                 <% for(var i=0; i < info.length; i++) { %>
-                    <li><b class="mr-2 t1-2-clr"><%- info[i].title %></b> <%- info[i].text %></li>
+                    <tr><td class="pr-2 pb-2" valign="top"><b class="t1-2-clr"><%- info[i].title %></b></td><td class="pb-2" valign="top"> <%- info[i].text %></td></tr>
                 <% } %>
-            </ul>
+            </table>
         </div>
     </div>
 </div>
