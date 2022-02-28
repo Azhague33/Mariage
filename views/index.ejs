@@ -127,15 +127,14 @@
 
 
     <section class="container-fluid nav-section" id="programme">
-        <div class="row">
+        <div class="row pb-6">
             <div class="container">
-                <h2 class="mb-4 text-center">Samedi 02.07.2022</h2>
-                <p class="main-txt mb-6 text-center">Nous sommes heureux de célébrer notre mariage avec vous au <strong>Château de Campet</strong></p>
+                <h2 class="mb-6 text-center">Samedi 02.07.2022</h2>
                 <div class="row">
                     <div class="col-12 text-center mb-5" id="programMenuDays">
 
                         <div class="row text-left mb-6">
-                            <div class="col-md-7 col-sm-10 col-12">
+                            <div class="col-md-5 col-sm-10 col-12">
                                 <ul class="row my-0 p-0" id="programMenu">
                                     <li class="col-sm-6 col-4 pr-0 d-flex flex-column active" data-form-to="0" data-target="#programMenuDays">
                                         <h3 class="mb-2 text-uppercase t1-1-clr"><b>Le Samedi</b></h3>
@@ -155,49 +154,45 @@
                                 <div class="row">
                                     <%- include('partials/program_card.ejs', {
                                         time: "15:00",
-                                        title: "&Eacute;glise",
-                                        description: " Rendez-vous à léglise Nom de l'église pour la cérémonise religieuse. Arrivez la voix fraîche et l'esprit léger&hellip; pour le meilleur et pour le pire !",
+                                        title: "La Cérémonie religieuse",
+                                        description: "Rendez-vous à l'&Eacute;glise Notre-Dame pour la cérémonise religieuse. Arrivez la voix fraîche et l'esprit léger&hellip; pour les meilleurs et pour les pires 🙏",
                                         pictureUrl: "images/eglise.jpg",
                                         info: [
                                             {
-                                                title: "Adresse",
-                                                text: '<a class="t1-2-clr" target="_blank" href="https://goo.gl/maps/sec8FeMrxjmSwF6i9">67 rue Mestre, 33200 Bordeaux</a>'
+                                                title: "Lieu",
+                                                text: '<a class="t1-2-clr" target="_blank" href="https://goo.gl/maps/G4mDHvBiXdcUBmPJA">40700 Rue de la Paix, 40700 Doazit</a>'
                                             },
                                             {
                                                 title: "Parking",
-                                                text: "&hellip;"
+                                                text: "<i>Une cinquantaine de places autour de l'église pour les premiers. Où vous pourrez pour les suivants. Prévoyez d'arriver un peu en avance.</i>"
                                             }
                                         ]
                                     }) %>
                                     <%- include('partials/program_card.ejs', {
                                         time: "18:00",
-                                        title: "Le cocktaïl",
-                                        description: "Après l'&Eacute;glise, rendez-vous pour le cocktail d'ouverture dans le jardin du Château. Vous pourrez y siroter la boisson de votre choix, manger de petits fours, et profiter de quelques surpises.",
+                                        title: "Le Cocktaïl",
+                                        description: "Après l'&Eacute;glise, on se retrouve pour le cocktaïl d'ouverture dans le jardin du Château. Vous pourrez y siroter la boisson de votre choix, manger de petits fours, et profiter de quelques surpises 🥂",
                                         pictureUrl: "images/campet.jpg",
                                         info: [
                                             {
-                                                title: "Adresse",
+                                                title: "Lieu",
                                                 text: '<a class="t1-2-clr" target="_blank" href="https://goo.gl/maps/JwMo45kLurB4zqNH8">Château de Campet, 40090 Campet-et-Lamolère, Palais</a>'
                                             },
                                             {
                                                 title: "Parking",
-                                                text: "&hellip;"
+                                                text: "<i>En épi à l'entrée du château.</i>"
                                             }
                                         ]
                                     }) %>
                                     <%- include('partials/program_card.ejs', {
                                         time: "20:00",
-                                        title: "La Soirée Dîner",
-                                        description: "Bienvenue dans notre le super \"street-dîner\" où vous pourrez déguster de délicieux plats cuisiné sur place depuis vos manges-debouts, ou salons de jardin. Mangez, profitez, et prenez des froce pur lasoirée danssante, qui ne démarre jamais quand on l'attend",
+                                        title: "Le Dîner - Soirée",
+                                        description: "Rendez-vous ensuite au pied de l'orangerie pour déguster de délicieux plats cuisinés devant vous. Mangez, profitez, et prenez des forces pour la soirée&hellip; 🔥",
                                         pictureUrl: "images/soiree.jpg",
                                         info: [
                                             {
-                                                title: "Adresse",
-                                                text: '<a class="t1-2-clr" target="_blank" href="https://goo.gl/maps/JwMo45kLurB4zqNH8">Château de Campet, 40090 Campet-et-Lamolère, Palais</a>'
-                                            },
-                                            {
-                                                title: "Parking",
-                                                text: "&hellip;"
+                                                title: "Lieu",
+                                                text: "Toujours au château 🏰"
                                             }
                                         ]
                                     }) %>
@@ -209,16 +204,12 @@
                                     <%- include('partials/program_card.ejs', {
                                         time: "12:00",
                                         title: "Le brunch",
-                                        description: "Des chocolatine pour la team Sud-Ouest, des pains au chocolat pour les provinciaux : venez déguster un bon brunch de landemain de soirée.",
+                                        description: "Des chocolatines pour la team Sud-Ouest, des pains au chocolat pour les provinciaux : venez déguster un bon brunch de landemain de soirée 🥐<br/><br/>Il y aura aussi un petit tournoi avec lots à gagner 🏆",
                                         pictureUrl: "images/brunch.jpg",
                                         info: [
                                             {
-                                                title: "Adresse",
-                                                text: '<a class="t1-2-clr" target="_blank" href="https://goo.gl/maps/JwMo45kLurB4zqNH8">Château de Campet, 40090 Campet-et-Lamolère, Palais</a>'
-                                            },
-                                            {
-                                                title: "Parking",
-                                                text: "&hellip;"
+                                                title: "Lieu",
+                                                text: "Et toujours au château 🏰"
                                             }
                                         ]
                                     }) %>
@@ -292,10 +283,6 @@
                                         <h4 class="text-white">Obligé ?</h4>
                                         <p class="m-0 t1-5-clr">Pas d'obligation ce jour-là. Du moins seulement pour les mariés.</p>
                                     </div>
-                                    <div class="col-10">
-                                        <h4 class="text-white">Credit</h4>
-                                        <em><small class="t1-5-clr">- Sherlock Junior Edouardo</small></em>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -304,14 +291,32 @@
             </section>
         </div>
     </section>
+
+
     <section class="container-fluid nav-section" id="rsvp">
         <div class="row">
-            <div class="container">
-                <h2 class="mb-5 text-center">RSVP</h2>
-                <p class="main-txt text-center">Nous sommes heureux de célébrer notre mariage avec vous au <strong>Château de Campet</strong></p>
+            <div class="container text-center">
+                <h2 class="mb-5">RSVP</h2>
+                <p class="main-txt mb-5">Merci de remplir le formulaire pour confirmer votre présence :</p>
+                <a class="mb-5 d-inline-block btn py-3 btn-1-outline-14" href="https://forms.gle/KZQxUMNCkeydGKU28" target="_blank">Un formulaire ?<br/>J'adore !</a>
+                <small class="d-block"><em class="t1-5-clr">Liste des invités disponible <a href="https://docs.google.com/spreadsheets/d/1k_SLDqAIeDBY6dDjTfZMJBI3zpyV0WXcZQpOlxWUOdI/edit#gid=1123988796" class="t4-5-clr" target="_blank"><small>ici</small></a></em></small>
             </div>
         </div>
     </section>
+
+
+    <section class="container-fluid nav-section t1-6-bg" id="logements">
+        <div class="row">
+            <div class="container text-center">
+                <h2 class="mb-5">Logements</h2>
+                <p class="main-txt mb-5">Merci de remplir le formulaire pour confirmer votre présence :</p>
+                <a class="mb-5 d-inline-block btn py-3 btn-1-outline-14" href="https://forms.gle/KZQxUMNCkeydGKU28" target="_blank">Un formulaire ?<br/>J'adore !</a>
+                <small class="d-block"><em class="t1-5-clr">Liste des invités disponible <a href="https://docs.google.com/spreadsheets/d/1k_SLDqAIeDBY6dDjTfZMJBI3zpyV0WXcZQpOlxWUOdI/edit#gid=1123988796" class="t4-5-clr" target="_blank"><small>ici</small></a></em></small>
+            </div>
+        </div>
+    </section>
+
+
     <section class="container-fluid nav-section" id="cadeau">
         <div class="row">
             <div class="container text-center">
@@ -340,9 +345,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container-fluid" id="contact">
-
     </section>
 </div>
 
