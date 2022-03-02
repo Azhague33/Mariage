@@ -10,7 +10,6 @@ const showdown  = require('showdown');
 const markdownHtmlConverter = new showdown.Converter()
 const sslRedirect = require('heroku-ssl-redirect').default;
 const modules = require('./modules');
-const nodemailer = require('nodemailer');
 const querystring = require('querystring');
 const {createGzip} = require('zlib');
 const url = require('url');
@@ -32,7 +31,7 @@ app
 .use(helmet())
 .use(compression())
 .use(express.static(__dirname + '/public'))
-.use(favicon(__dirname + '/public/images/logo/les-arroseurs-favicon.png'))
+.use(favicon(__dirname + '/public/images/favicon.png'))
 .use(bodyParser.urlencoded({extended: false}))
 .use(cookieSession({
 	name: "session-CG",
@@ -55,19 +54,6 @@ app.locals = {
 	"isProduction": isProduction,
 	"provideAnalytics": true
 };
-
-const transporter = nodemailer.createTransport({
-	host: 'SSL0.OVH.NET',
-	port: 465,
-	secure: true, // true for 465, false for other ports
-	auth: {
-		user: 'equipe@les-arroseurs.com',
-		pass: process.env.SMTP_PASS
-	},
-    tls: {
-        rejectUnauthorized: false
-    }
-});
 
 
 /********** INDEX **********/
