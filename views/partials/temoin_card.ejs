@@ -1,9 +1,11 @@
-<div class="row d-flex temoin-card">
-    <div class="col-4 pl-0 align-self-end">
-        <img src="<%- pictureUrl %>"/>
-    </div>
-    <div class="col-8 align-self-end pb-3 pr-0">
-        <div class="border bg-white shadow">
+<div class="row mx-0 d-flex temoin-card">
+    <% if(picturePlace == "left") { %>
+        <div class="col-sm-4 col-2 pl-0 align-self-end text-center">
+            <img src="<%- pictureUrl %>"/>
+        </div>
+    <% } %>
+    <div class="col-sm-8 col-10 align-self-end pb-3 pr-0">
+        <div class="bg-white shadow">
             <div class="px-4 py-3 t1-6-bg">
                 <h4 class="mb-1"><%- name %></h4>
                 <p class="m-0 t1-4-clr">- <%- sub %></p>
@@ -13,4 +15,9 @@
             </div>
         </div>
     </div>
+    <% if(picturePlace == "right") { %>
+        <div class="col-sm-4 col-2 pl-0 align-self-end text-center">
+            <img src="<%- pictureUrl %>"/>
+        </div>
+    <% } %>
 </div>

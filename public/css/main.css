@@ -269,8 +269,8 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 /********** NOUS **********/
     #nous .img.constance{background: url(/images/constance/constance-0.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
     #nous .img.constance:hover{background: url(/images/constance/constance-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #nous .img.guillaume{background: url(/images/guillaume/guillaume-0.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #nous .img.guillaume:hover{background: url(/images/guillaume/guillaume-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #nous .img.guillaume{background: url(/images/guillaume/guillaume-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+    #nous .img.guillaume:hover{background: url(/images/guillaume/guillaume-0.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
     #nous .img > div{min-height: 290px; border: 8px double white;}
     #nous p{font-family: lato-light;}
 
@@ -317,7 +317,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 /********** TEMOINS **********/
     #temoins .container-fluid{background: linear-gradient(180deg, rgba(255, 255, 255, 0) 82%, rgba(230, 230, 230, 1) 82%, rgba(255, 255, 255, 1) 100%);}
-    .temoin-card img{max-height: 390px;}
+    .temoin-card img{max-height: 390px; max-width: 180%;}
     .temoin-card .shadow{box-shadow: -0.1rem 0.4rem 0.5rem rgb(0, 0, 0, .35) !important;}
     .temoin-card p{font-size: 1.1rem;}
     .temoin-card em{font-size: 1.1rem; font-family: lato-light; line-height: 120%;}
@@ -399,7 +399,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     #logements h4{font-size: 1.2rem;}
     #logements h4 i{font-size: .9rem; font-family: lato-light;}
     #logements p{font-size: 1rem; font-family: lato-light; line-height: 135%;}
-    #logements a.link{font-size: 1.05rem;}
+    #logements a.link{font-size: 1rem;}
 
 
 
