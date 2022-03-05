@@ -127,146 +127,155 @@
 
 
     <section class="container-fluid nav-section" id="temoins">
-        <div class="row pb-6">
-            <div class="container-fluid">
-                <h2 class="mb-3 text-center">Les Témoins</h2>
+        <h2 class="mb-3 text-center">Les Témoins</h2>
+        
+        <div class="row">
+
+        <%# GUILLAUME %>
+            <div class="container-fluid mb-6">
                 <div class="row">
-
-                    <%# GUILLAUME %>
-                        <div class="container pb-5 mb-5">
-                            <div id="carouselGuillaumesTemoins" class="carousel slide" data-ride="false" data-interval="1000000000">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="d-md-flex d-none col-1 pr-0">
-                                        <a class="carousel-control carousel-control-prev" href="#carouselGuillaumesTemoins" role="button" data-slide="prev">
-                                            <svg viewBox="0 0 59.414 59.414" fill="currentColor"><polygon points="45.268,1.414 43.854,0 14.146,29.707 43.854,59.414 45.268,58 16.975,29.707 "/></svg>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-9 col-md-10 col-12">
-                                        <div class="carousel-inner-wrapper row">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item col-12 active">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "left",
-                                                        pictureUrl: "images/temoins/adrien.png",
-                                                        name: "Adrien Guémy",
-                                                        sub: "Ami & Parrain des Mines",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "left",
-                                                        pictureUrl: "images/temoins/cyril.png",
-                                                        name: "Cyril Maubé",
-                                                        sub: "Ami & Teamate &Eacute;quipe de Foot",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "left",
-                                                        pictureUrl: "images/temoins/salim.png",
-                                                        name: "Salim Diallo",
-                                                        sub: "Ami & Compagnon de Classe Préparatoire",
-                                                        text: "Salut c’est Salim ! J’ai 31 ans et j’habite à Toulouse. Physicien, j’ai l’immense honneur d’être le témoin de mon cher ami Guillaume pour son marriage avec Constance. Tout en leur souhaitant le meilleur pour la vie. Hâte de tous vous voir pour cet évènement !"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "left",
-                                                        pictureUrl: "images/temoins/olivier.png",
-                                                        name: "Olivier Blanchard",
-                                                        sub: "Ami & Camarade de classe IUT",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
+                    <div class="container">
+                        <div id="carouselGuillaumesTemoins" class="carousel slide" data-ride="false" data-interval="1000000000">
+                            <div class="row d-flex justify-content-center">
+                                <div class="d-md-flex d-none col-1 pr-0">
+                                    <a class="carousel-control carousel-control-prev" href="#carouselGuillaumesTemoins" role="button" data-slide="prev">
+                                        <svg viewBox="0 0 59.414 59.414" fill="currentColor"><polygon points="45.268,1.414 43.854,0 14.146,29.707 43.854,59.414 45.268,58 16.975,29.707 "/></svg>
+                                    </a>
+                                </div>
+                                <div class="col-lg-9 col-md-10 col-12">
+                                    <div class="carousel-inner-wrapper row">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item col-12 active">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "left",
+                                                    pictureUrl: "images/temoins/adrien.png",
+                                                    name: "Adrien Guémy",
+                                                    sub: "Ami & Parrain des Mines",
+                                                    text: "Le pote geek et amical, plus cérébral que manuel. Parisien, depuis toujours. Toujours partant pour aller boire des coups, à conditions que je trouve de la place dans mon agenda de ministre. Sportif du dimanche, mais dangereux : la seule fois où Guillaume m’a mis un petit pont, il a fini à l’hôpital !"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "left",
+                                                    pictureUrl: "images/temoins/cyril.png",
+                                                    name: "Cyril Maubé",
+                                                    sub: "Ami & Teamate &Eacute;quipe de Foot",
+                                                    text: "Salut à tous !<br/>Je me présente, protocole oblige : Cyril, surfer dès l’âge de marcher, un brin brin épicurien, l’échange mon dada, le commerce ma voie.<br/>Quel honneur, fierté, plaisir de pouvoir être le témoin de Guillaume (mon petit frère comme j’aime dire, moins talentueux que son grand frère mais tout de même, on voit qu’il est de la famille !) pour son mariage avec Constance, sa belle Princesse !"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "left",
+                                                    pictureUrl: "images/temoins/salim.png",
+                                                    name: "Salim Diallo",
+                                                    sub: "Ami & Compagnon de Classe Préparatoire",
+                                                    text: "Salut c’est Salim ! J’ai 31 ans et j’habite à Toulouse. Physicien, j’ai l’immense honneur d’être le témoin de mon cher ami Guillaume (mon seul adversaire de taille aux dames) pour son marriage avec Constance. Tout en leur souhaitant le meilleur pour la vie. Hâte de tous vous voir pour cet évènement !"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "left",
+                                                    pictureUrl: "images/temoins/olivier.png",
+                                                    name: "Olivier Blanchard",
+                                                    sub: "Ami & Camarade de classe IUT",
+                                                    text: "Hello,<br/>Moi c'est Olivier, 32 ans, ingénieur dans le genie civil.<br/>Maintenant 15 ans d'amitié avec Guillaume depuis l'IUT des excès. Branleur de génie, mais ingénieur des soirées, lorsqu'il y a de la bière dans nos verres impossible de s'en défaire, alors avec Guillaume c'est forcément le binôme.<br/>Après tout ce temps, super heureux de participer à son mariage avec constance et extrêmement honoré d’être son témoin.<br/>Hâte de tous vous rencontrer tous pour fêter ça comme il se doit."
+                                                }) %>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-md-flex d-none col-1 pl-0">
-                                        <a class="carousel-control carousel-control-next" href="#carouselGuillaumesTemoins" role="button" data-slide="next">
-                                            <svg viewBox="0 0 47.255 47.255" fill="currentColor"><path d="M12.314,47.255c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l21.92-21.92l-21.92-21.92   c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L35.648,22.92c0.391,0.391,0.391,1.023,0,1.414L13.021,46.962   C12.825,47.157,12.57,47.255,12.314,47.255z"/></svg>
-                                        </a>
-                                    </div>
                                 </div>
-                                <ol class="carousel-indicators mx-auto">
-                                    <li data-target="#carouselGuillaumesTemoins" data-slide-to="0" class="active">1</li>
-                                    <li data-target="#carouselGuillaumesTemoins" data-slide-to="1">2</li>
-                                    <li data-target="#carouselGuillaumesTemoins" data-slide-to="2">3</li>
-                                    <li data-target="#carouselGuillaumesTemoins" data-slide-to="3">4</li>
-                                </ol>
+                                <div class="d-md-flex d-none col-1 pl-0">
+                                    <a class="carousel-control carousel-control-next" href="#carouselGuillaumesTemoins" role="button" data-slide="next">
+                                        <svg viewBox="0 0 47.255 47.255" fill="currentColor"><path d="M12.314,47.255c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l21.92-21.92l-21.92-21.92   c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L35.648,22.92c0.391,0.391,0.391,1.023,0,1.414L13.021,46.962   C12.825,47.157,12.57,47.255,12.314,47.255z"/></svg>
+                                    </a>
+                                </div>
                             </div>
+                            <ol class="carousel-indicators mx-auto">
+                                <li data-target="#carouselGuillaumesTemoins" data-slide-to="0" class="active">1</li>
+                                <li data-target="#carouselGuillaumesTemoins" data-slide-to="1">2</li>
+                                <li data-target="#carouselGuillaumesTemoins" data-slide-to="2">3</li>
+                                <li data-target="#carouselGuillaumesTemoins" data-slide-to="3">4</li>
+                            </ol>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                    <%# CONSTANCE %>
-                        <div class="container pb-5 mb-5">
-                            <div id="carouselConstanceTemoins" class="carousel slide" data-ride="false" data-interval="1000000000">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="d-md-flex d-none col-1 pr-0">
-                                        <a class="carousel-control carousel-control-prev" href="#carouselConstanceTemoins" role="button" data-slide="prev">
-                                            <svg viewBox="0 0 59.414 59.414" fill="currentColor"><polygon points="45.268,1.414 43.854,0 14.146,29.707 43.854,59.414 45.268,58 16.975,29.707 "/></svg>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-9 col-md-10 col-12">
-                                        <div class="carousel-inner-wrapper row">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item col-12 active">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "right",
-                                                        pictureUrl: "images/temoins/marion.png",
-                                                        name: "Marion Gasparotto",
-                                                        sub: "Amie & Classmate du lycée",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "right",
-                                                        pictureUrl: "images/temoins/tiffany.png",
-                                                        name: "Tiffany Bernard",
-                                                        sub: "Amie & Classmate de fac",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "right",
-                                                        pictureUrl: "images/temoins/sarah.png",
-                                                        name: "Sarah Descoubes",
-                                                        sub: "Amie & Classmate du lycée",
-                                                        text: "Salut c’est Salim ! J’ai 31 ans et j’habite à Toulouse. Physicien, j’ai l’immense honneur d’être le témoin de mon cher ami Guillaume pour son marriage avec Constance. Tout en leur souhaitant le meilleur pour la vie. Hâte de tous vous voir pour cet évènement !"
-                                                    }) %>
-                                                </div>
-                                                <div class="carousel-item col-12">
-                                                    <%- include('partials/temoin_card.ejs', {
-                                                        picturePlace: "right",
-                                                        pictureUrl: "images/temoins/clement.png",
-                                                        name: "Clément Dulucq",
-                                                        sub: "Frangin",
-                                                        text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
-                                                    }) %>
-                                                </div>
+        <%# CONSTANCE %>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div id="carouselConstanceTemoins" class="carousel slide" data-ride="false" data-interval="1000000000">
+                            <div class="row d-flex justify-content-center">
+                                <div class="d-md-flex d-none col-1 pr-0">
+                                    <a class="carousel-control carousel-control-prev" href="#carouselConstanceTemoins" role="button" data-slide="prev">
+                                        <svg viewBox="0 0 59.414 59.414" fill="currentColor"><polygon points="45.268,1.414 43.854,0 14.146,29.707 43.854,59.414 45.268,58 16.975,29.707 "/></svg>
+                                    </a>
+                                </div>
+                                <div class="col-lg-9 col-md-10 col-12">
+                                    <div class="carousel-inner-wrapper row">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item col-12 active">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "right",
+                                                    pictureUrl: "images/temoins/marion.png",
+                                                    name: "Marion Gasparotto",
+                                                    sub: "Amie & Classmate du lycée",
+                                                    text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "right",
+                                                    pictureUrl: "images/temoins/tiffany.png",
+                                                    name: "Tiffany Bernard",
+                                                    sub: "Amie & Classmate de fac",
+                                                    text: "Hello à tous !<br/>Je m'appelle Tiffany. Si je devais résumer mon amitié avec Constance aujourd'hui avec vous, je dirais que c'est d'abord une rencontre, une personne qui m'a tendu la main, peut être à un moment où je ne pouvais pas... Bon, petit clin d'oeil à mon petit, ma Constance, ma coloc de fac, ... bref mon amie que j'aime tout particulièrement. Une petite idée de nos délires qui sont restés en mémoire et pleins d'autres restent à venir&hellip; En tout cas, très heureuse de partager ce magnifique moment avec vous tous. À très vite!!"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "right",
+                                                    pictureUrl: "images/temoins/sarah.png",
+                                                    name: "Sarah Descoubes",
+                                                    sub: "Amie & Classmate du lycée",
+                                                    text: "Salut c’est Salim ! J’ai 31 ans et j’habite à Toulouse. Physicien, j’ai l’immense honneur d’être le témoin de mon cher ami Guillaume pour son marriage avec Constance. Tout en leur souhaitant le meilleur pour la vie. Hâte de tous vous voir pour cet évènement !"
+                                                }) %>
+                                            </div>
+                                            <div class="carousel-item col-12">
+                                                <%- include('partials/temoin_card.ejs', {
+                                                    picturePlace: "right",
+                                                    pictureUrl: "images/temoins/clement.png",
+                                                    name: "Clément Dulucq",
+                                                    sub: "Frangin",
+                                                    text: "Petite présentation : Bllalala blalba blabla blala blalbl qsala blalba blabla blala blalbl qsala blalba blabla blala blalbl qs"
+                                                }) %>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-md-flex d-none col-1 pl-0">
-                                        <a class="carousel-control carousel-control-next" href="#carouselConstanceTemoins" role="button" data-slide="next">
-                                            <svg viewBox="0 0 47.255 47.255" fill="currentColor"><path d="M12.314,47.255c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l21.92-21.92l-21.92-21.92   c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L35.648,22.92c0.391,0.391,0.391,1.023,0,1.414L13.021,46.962   C12.825,47.157,12.57,47.255,12.314,47.255z"/></svg>
-                                        </a>
-                                    </div>
                                 </div>
-                                <ol class="carousel-indicators mx-auto">
-                                    <li data-target="#carouselConstanceTemoins" data-slide-to="0" class="active">1</li>
-                                    <li data-target="#carouselConstanceTemoins" data-slide-to="1">2</li>
-                                    <li data-target="#carouselConstanceTemoins" data-slide-to="2">3</li>
-                                    <li data-target="#carouselConstanceTemoins" data-slide-to="3">4</li>
-                                </ol>
+                                <div class="d-md-flex d-none col-1 pl-0">
+                                    <a class="carousel-control carousel-control-next" href="#carouselConstanceTemoins" role="button" data-slide="next">
+                                        <svg viewBox="0 0 47.255 47.255" fill="currentColor"><path d="M12.314,47.255c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l21.92-21.92l-21.92-21.92   c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L35.648,22.92c0.391,0.391,0.391,1.023,0,1.414L13.021,46.962   C12.825,47.157,12.57,47.255,12.314,47.255z"/></svg>
+                                    </a>
+                                </div>
                             </div>
+                            <ol class="carousel-indicators mx-auto">
+                                <li data-target="#carouselConstanceTemoins" data-slide-to="0" class="active">1</li>
+                                <li data-target="#carouselConstanceTemoins" data-slide-to="1">2</li>
+                                <li data-target="#carouselConstanceTemoins" data-slide-to="2">3</li>
+                                <li data-target="#carouselConstanceTemoins" data-slide-to="3">4</li>
+                            </ol>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    
+
 
 
     <section class="container-fluid nav-section" id="programme">
@@ -539,6 +548,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="container-fluid pb-0" id="seeYouSoon">
         <div class="row">

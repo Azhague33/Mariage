@@ -316,12 +316,12 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 /********** TEMOINS **********/
-    #temoins .container-fluid{background: linear-gradient(180deg, rgba(255, 255, 255, 0) 82%, rgba(230, 230, 230, 1) 82%, rgba(255, 255, 255, 1) 100%);}
+    #temoins .container-fluid{background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(240, 240, 240, 1) 70%, rgba(255, 255, 255, 1) 100%);}
     .temoin-card img{max-height: 390px; max-width: 180%;}
-    .temoin-card .shadow{box-shadow: -0.1rem 0.4rem 0.5rem rgb(0, 0, 0, .35) !important;}
-    .temoin-card p{font-size: 1.1rem;}
-    .temoin-card em{font-size: 1.1rem; font-family: lato-light; line-height: 120%;}
-
+    .temoin-card .shadow{box-shadow: -.1rem .4rem .5rem rgb(0, 0, 0, .35) !important;}
+    .temoin-card h4 span{height: 22px; width: 22px; margin-bottom: -2px; border-radius: 50%; box-shadow: -0.1rem 0.1rem 0.4rem rgb(0, 0, 0, .35) inset;}
+    .temoin-card p{font-size: 1rem;}
+    .temoin-card em{font-style: normal; font-size: 1rem; font-family: lato-light; line-height: 120%; border-left: 4px rgb(168, 230, 206) solid;}
 
 
 /********** PROGRAMME **********/
