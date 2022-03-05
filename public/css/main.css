@@ -177,7 +177,9 @@ a.t4-4-clr:hover{color: rgb(255, 159, 15);}
     .carousel-indicators{bottom: -70px;}
     .carousel-indicators li{
         border-radius: 51%;
-        height: 20px; width: 20px;
+        height: 14px; width: 14px;
+        margin-right: 2px;
+        margin-left: 2px;
         border: 1px rgb(111, 115, 108) solid;
         color: rgb(111, 115, 108);
         text-indent: 0px;
@@ -186,6 +188,9 @@ a.t4-4-clr:hover{color: rgb(255, 159, 15);}
         text-align: center;
         opacity: .8;
     }
+    @media (min-width: 576px) {.carousel-indicators li{border-radius: 51%; height: 20px; width: 20px; margin-left: 3px; margin-right: 3px;}}
+    .carousel-indicators li b{display: none;}
+    @media (min-width: 576px) {.carousel-indicators li b{display: inline;}}
     .carousel-indicators li.hover{opacity: 1;}
     .carousel-indicators li.active{color: white; background-color: rgb(28, 156, 105); border-color: rgb(28, 156, 105); text-shadow: -1px 1px 1px rgb(19, 110, 74);}
 
@@ -219,7 +224,7 @@ a.t4-4-clr:hover{color: rgb(255, 159, 15);}
 
 /********** FOOTER **********/
 footer{min-height: 110px; margin-top: -115px; box-shadow: 1px 0px 3px rgba(0, 0, 0, .25); position: relative; z-index: 1;}
-footer img{opacity: .85;}
+footer img{opacity: .85; max-width: 100%;}
 footer .copyright p{font-size: .85em;}
 footer .copyright a{font-size: 1em;}
 footer .copyright a:hover{color: rgb(131, 117, 95);}
