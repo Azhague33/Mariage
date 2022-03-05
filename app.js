@@ -1,7 +1,6 @@
 const axios = require('axios').defaul;
 const bodyParser = require('body-parser');
 const compression = require('compression');
-const cookieSession = require('cookie-session');
 const express = require('express');
 const favicon = require('serve-favicon');
 const fs = require('fs');
