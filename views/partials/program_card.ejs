@@ -3,11 +3,11 @@
         <div>
             <div class="time-pane t42-31str-bg shadow d-inline-block"><span class="text-white"><%- time %></span></div>
             <img class="w-100 mb-5" src="<%- pictureUrl %>"/>
-            <div class="px-5">
+            <div class="px-md-5 px-3">
                 <h4 class="mb-3"><%- title %></h4><p class="t1-4-clr"><%- description %></p>
             </div>
         </div>
-        <div class="info-block px-5">
+        <div class="info-block px-md-5 px-3">
             <table>
                 <% for(var i=0; i < info.length; i++) { %>
                     <tr><td class="pr-2 pb-2" valign="top"><b class="t1-2-clr"><%- info[i].title %></b></td><td class="pb-2" valign="top"> <%- info[i].text %></td></tr>

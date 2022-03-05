@@ -121,18 +121,15 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 sp
 h2, .h2, h2 span, .h2 span{font-size: 3.5rem !important;}
 h3, .h3, h3 span, .h3 span{font-size: 3rem !important;}
 @media (max-width: 991.98px) {
-    h1, .h1, h1 span, .h1 span{font-size: 4.1rem !important;}
     h2, .h2, h2 span, .h2 span{font-size: 2.9rem !important;}
     h3, .h3, h3 span, .h3 span{font-size: 2.5rem !important;}
 }
 @media (max-width: 767.98px) {
-    h1, .h1, h1 span, .h1 span{font-size: 1.9rem !important;}
-    h2, .h2, h2 span, .h2 span{font-size: 1.5rem !important;}
-    h3, .h3, h3 span, .h3 span{font-size: 1.4rem !important;}
+    h2, .h2, h2 span, .h2 span{font-size: 2.3rem !important;}
+    h3, .h3, h3 span, .h3 span{font-size: 2rem !important;}
 }
 @media (max-width: 575.98px) {
-    h1, .h1, h1 span, .h1 span{font-size: 1.9rem !important;}
-    h2, .h2, h2 span, .h2 span{font-size: 1.4rem !important;}
+    h2, .h2, h2 span, .h2 span{font-size: 1.5rem !important;}
     h3, .h3, h3 span, .h3 span{font-size: 1.3rem !important;}
 }
 .h5, h5 {font-size: 1.25rem !important;}
@@ -207,8 +204,13 @@ a.t4-4-clr:hover{color: rgb(255, 159, 15);}
     font-weight: bold;
 }
 .navbar-nav .nav-link.active {
-    border-bottom: .2rem rgb(32, 181, 121) solid;
+    border-bottom: .2rem transparent solid;
     padding-bottom: 1rem !important;
+}
+@media (min-width: 768px) {
+    .navbar-nav .nav-link.active {
+        border-bottom: .2rem rgb(32, 181, 121) solid;
+    }
 }
 .navbar .dropdown-menu{margin-top: 8px !important; border-radius: 0;}
 @media (max-width: 575.98px) {.navbar .navbar-collapse{padding-top: 12px !important;}}
@@ -255,7 +257,10 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 
-    .header-container{border: 1px rgb(139, 126, 103) solid; border-top: none; border-right: none;}
+    .header-container > div{text-align: center;}
+    @media (min-width: 768px) {
+        .header-container > div{border: 1px rgb(139, 126, 103) solid; border-top: none; border-right: none; text-align: left;}
+    }
     h1, h1 span{font-family: uni-sans-bold; font-size: 6rem !important; line-height: 65%; letter-spacing: 0px;}
     h1 span{font-size: 3.2rem !important;}
     h1 small{font-size: 1.8rem; font-family: uni-sans; letter-spacing: 5px;}
