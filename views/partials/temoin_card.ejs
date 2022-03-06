@@ -6,11 +6,13 @@
     <% } %>
     <div class="col-md-8 col-sm-9 col-10 align-self-end pb-3 <% if(picturePlace == "left") { %>pr-0<% } else {%>pl-0<% } %>">
         <div class="bg-white shadow">
-            <div class="px-4 py-3 t1-6-bg">
-                <h4 class="h5 m-0"><span class="d-inline-block bg-white mr-3"> </span><%- name %></h4>
-                <p class="m-0 t1-4-clr">- <%- sub %></p>
+            <div class="px-3 py-sm-3 py-2 t1-6-bg">
+                <table>
+                    <tr><td class="pt-1 pr-3"><span class="d-inline-block bg-white"></span></td><td><h4 class="h5 m-0"><%- name %></h4></td></tr>
+                    <tr><td></td><td><p class="m-0 t1-4-clr"><b>-</b> <%- sub %></p></td></tr>
+                </table>
             </div>
-            <div class="p-4 pb-5">
+            <div class="p-sm-4 p-3 pb-sm-5 pb-4">
                 <em class="pl-3 py-1 d-block"><%- text %></em>
             </div>
         </div>
