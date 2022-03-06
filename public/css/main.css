@@ -298,46 +298,16 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     #photos > div{background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255 , 255, 255, 0) 3%, rgba(255 , 255, 255, 1) 80%, rgba(255 , 255, 255, 1) 100%)}
     #photos .carousel-inner-wrapper{border: 1px rgb(178, 178, 175) solid;}
     #photos .carousel-inner{border: 10px white solid;}
-    #photos .carousel-item, #photos .carousel-item > div > div{height: 480px;}
-    #photos .carousel-item.carousel-itel-double-content > div{width: 50%; display: inline-block;}
-    #photos .carousel-item.carousel-itel-double-content > div:first-child > div{border-right: 10px white solid;}
-
-    #photos .carousel-item .cg-1{background: url(/images/constance-et-guillaume/cg-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-2-1{background: url(/images/constance-et-guillaume/cg-2-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-2-2{background: url(/images/constance-et-guillaume/cg-2-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-3{background: url(/images/constance-et-guillaume/cg-3.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-4{background: url(/images/constance-et-guillaume/cg-4.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-5-1{background: url(/images/constance-et-guillaume/cg-5-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-5-2{background: url(/images/constance-et-guillaume/cg-5-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-6{background: url(/images/constance-et-guillaume/cg-6.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-7-1{background: url(/images/constance-et-guillaume/cg-7-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-7-2{background: url(/images/constance-et-guillaume/cg-7-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-8{background: url(/images/constance-et-guillaume/cg-8.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-9-1{background: url(/images/constance-et-guillaume/cg-9-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-9-2{background: url(/images/constance-et-guillaume/cg-9-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-10{background: url(/images/constance-et-guillaume/cg-10.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-11-1{background: url(/images/constance-et-guillaume/cg-11-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-11-2{background: url(/images/constance-et-guillaume/cg-11-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-12-1{background: url(/images/constance-et-guillaume/cg-12-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-12-2{background: url(/images/constance-et-guillaume/cg-12-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-13-1{background: url(/images/constance-et-guillaume/cg-13-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-13-2{background: url(/images/constance-et-guillaume/cg-13-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-14-1{background: url(/images/constance-et-guillaume/cg-14-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-14-2{background: url(/images/constance-et-guillaume/cg-14-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-15-1{background: url(/images/constance-et-guillaume/cg-15-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-15-2{background: url(/images/constance-et-guillaume/cg-15-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-16-1{background: url(/images/constance-et-guillaume/cg-16-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-16-2{background: url(/images/constance-et-guillaume/cg-16-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-17-1{background: url(/images/constance-et-guillaume/cg-17-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-    #photos .carousel-item .cg-17-2{background: url(/images/constance-et-guillaume/cg-17-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-
-
+    #photos .carousel-item > div{width: 100%; height: 100%; display: inline-block;}
+    #photos .carousel-item.carousel-itel-double-content{white-space: nowrap;}
+    #photos .carousel-item.carousel-itel-double-content > div{width: 50%;}
+    #photos .carousel-item img{width: 100%; height: 100%; cursor: pointer;}
 
 /********** TEMOINS **********/
     #temoins .container-fluid{background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(240, 240, 240, 1) 70%, rgba(255, 255, 255, 1) 100%);}
-    .temoin-card img{max-height: 390px; max-width: 180%;}
-    .temoin-card .shadow{box-shadow: -.1rem .4rem .5rem rgb(0, 0, 0, .35) !important;}
-    .temoin-card h4 span{height: 22px; width: 22px; margin-bottom: -2px; border-radius: 50%; box-shadow: -0.1rem 0.1rem 0.4rem rgb(0, 0, 0, .35) inset;}
+    .temoin-card img{max-height: 390px; max-width: 100%;}
+    .temoin-card .shadow{box-shadow: -.1rem .2rem .3rem rgb(0, 0, 0, .25) !important;}
+    .temoin-card h4 span{height: 22px; width: 22px; margin-bottom: -2px; border-radius: 50%; box-shadow: -.1rem .1rem .3rem rgb(0, 0, 0, .25) inset;}
     .temoin-card p{font-size: 1rem;}
     .temoin-card em{font-style: normal; font-size: 1rem; font-family: lato-light; line-height: 120%; border-left: 4px rgb(168, 230, 206) solid;}
 
