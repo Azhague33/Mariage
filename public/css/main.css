@@ -314,7 +314,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 /********** PROGRAMME **********/
     #programme .serious-font{font-family: uni-sans-bold;}
-    #programme h3{min-width: 280px; font-size: 1.2rem !important;}
+    #programme h3{font-size: 1.2rem !important;}
     #programme .bar{border-bottom: 1px solid rgb(228, 224, 224); margin-top: -2px;}
     #programMenu li{cursor: pointer; opacity: .5;}
     #programMenu li:hover{opacity: .8;}
