@@ -461,14 +461,3 @@ function applyCutText() {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-/***
- * NEW JS
- */
