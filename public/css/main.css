@@ -379,7 +379,9 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 /********** RSVP **********/
     #rsvp a.btn-1-outline-14{width: 350px; font-size: 1.2rem;}
-    .btn-1-outline-14{font-family: lato-light; border: 1px rgb(255, 159, 15) solid; background-color: white; color: rgb(122, 101, 63) !important;}
+    .btn-4{font-family: lato-light; line-height: 100%; background-color: rgb(228, 143, 16); color: white !important;}
+    .btn-4:hover{background-color: rgb(212, 127, 0); color: white !important;}
+    .btn-1-outline-14{font-family: lato-light; border: 1px rgb(255, 159, 15) solid; background-color: transparent; color: rgb(122, 101, 63) !important;}
     .btn-1-outline-14:hover, .btn-1-outline-14:active{background-color: rgb(216, 150, 52) !important; color:rgb(255, 235, 204) !important;}
     #rsvp small{font-size: 1rem;}
     
