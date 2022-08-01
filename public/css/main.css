@@ -266,7 +266,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     @media (min-width: 768px) {
         .header-container > div{border: 1px rgb(139, 126, 103) solid; border-top: none; border-right: none; text-align: left;}
     }
-    h1, h1 span{font-family: uni-sans-bold; font-size: 4rem !important; line-height: 65%; letter-spacing: 0px;}
+    h1, h1 span, .h1, .h1 span{font-family: uni-sans-bold; font-size: 4rem !important; line-height: 65%; letter-spacing: 0px;}
     h1 span{font-size: 2.2rem !important;}
     h1 small{font-size: 1.8rem; font-family: uni-sans; letter-spacing: 5px;}
     @media (min-width: 576px) {
@@ -409,3 +409,34 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 #seeYouSoon img{height: 170px;}
+
+
+/********************
+********************
+********** V2 **********/
+#accueilV2{
+    background: url(/images/v2/constance-et-guillaume-bg-v2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position-y: center;
+}
+#accueilV2  div.div-2{
+    min-height: 42rem;
+}
+#accueilV2 h2{
+   font-size: 6rem !important;
+}
+
+
+#mot .img{
+    border-radius: 51%;
+    max-width: 380px;
+    background: url(/images/v2/mot-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center;
+    border: 5px white solid;
+}
+#mot .img:hover{
+    background: url(/images/v2/mot-2.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center;
+}
+#mot .img > div{
+    border-radius: 51%;
+    margin: -2px;
+    min-height: 380px;
+    background: radial-gradient(circle, transparent 62%, white 67%, white 85%, white 100%);
+}
