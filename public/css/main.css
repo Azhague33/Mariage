@@ -426,13 +426,8 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
     background-attachment: fixed;
 }
-#accueilV2  div.div-2{
-    min-height: 42rem;
-}
-#accueilV2 h2{
-   font-size: 6rem !important;
-}
-
+#accueilV2  div.div-2{min-height: 42rem;}
+#accueilV2 h2{font-size: 6rem !important;}
 
 #mot .img{
     border-radius: 51%;
@@ -451,7 +446,6 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 }
 #mot h2{line-height: 95%;}
 #mot p{font-family: lato-light;}
-
 
 #bg1, #bg2, #bg3{min-height: 38rem;}
 #bg1{
@@ -491,21 +485,15 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     height: 520px;
 }
 */
-
 #photosMariage a.main-link, #prestas a{color: #8fb1d6;}
 #photosMariage p, #photosMariage b{font-family: lato-light;}
 
 #prestas img{max-width: 180px; border-radius: 51%; opacity: .95}
-#mot p{font-family: lato-light;}
-
 #prestas p.desc-txt{font-family: lato-light;}
 
-
 @media (max-width: 991.98px) {
-
     #mot .img{max-width: 380px;}
     #mot .img > div{min-height: 380px;}
-
 }
 @media (max-width: 767.98px) {
     #accueilV2 h2{font-size: 5rem !important;}
