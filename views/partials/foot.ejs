@@ -79,15 +79,19 @@
 
             $(".accueil-switch-buttons button[data-target='#v1']").click(function(e) {
                 hide("#v2");
-                hide("#navV2");
+                hide(".nav-v2");
                 displaySmoothly("#v1", 1000, null);
                 displaySmoothly("#navV1", 1000, null);
+                displaySmoothly("#footerComplement", 1000, null);
+                displaySmoothly(".nav-v1", 1000, null);
             });
             $(".accueil-switch-buttons button[data-target='#v2']").click(function(e) {
                 hide("#v1");
-                hide("#navV1");
+                hide(".nav-v1");
+                hide("#footerComplement");
                 displaySmoothly("#v2", 1000, null);
                 displaySmoothly("#navV2", 1000, null);
+                displaySmoothly(".nav-v2", 1000, null);
             });
         });
     </script>

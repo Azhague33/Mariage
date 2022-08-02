@@ -37,8 +37,7 @@ html, body{
     min-height: 100%; height: 100%;
 }
 #main{
-    min-height: 100%;
-    padding-bottom: 150px;
+    min-height: 150%;
     padding-top: 50px;
 }
 .container {max-width: 100%; width: 100%;}
@@ -223,7 +222,7 @@ a.t4-4-clr:hover{color: rgb(255, 159, 15);}
 
 
 /********** FOOTER **********/
-footer{min-height: 110px; margin-top: -115px; box-shadow: 1px 0px 3px rgba(0, 0, 0, .25); position: relative; z-index: 1;}
+footer{min-height: 80px; box-shadow: 1px 0px 3px rgba(0, 0, 0, .25); position: relative; z-index: 1;}
 footer img{opacity: .85; max-width: 100%;}
 footer .copyright p{font-size: .85em;}
 footer .copyright a{font-size: 1em;}
@@ -418,7 +417,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 /********************
 ********************
 ********** V2 **********/
-.accueil-switch-buttons .btn{border-radius: 42%; display: inline-block; line-height: 100%; font-size: .85rem;}
+.accueil-switch-buttons .btn{border-radius: 42%; display: inline-block; line-height: 100%; font-size: .85rem; opacity: .95;}
 #accueilV2 .accueil-switch-buttons .btn{color:white !important;}
 #accueilV2 .accueil-switch-buttons div.btn{cursor: auto;}
 #accueilV2{
@@ -437,7 +436,7 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 #mot .img{
     border-radius: 51%;
-    max-width: 380px;
+    max-width: 440px;
     background: url(/images/v2/mot-1.jpg); background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center;
     border: 5px white solid;
 }
@@ -447,10 +446,12 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 #mot .img > div{
     border-radius: 51%;
     margin: -2px;
-    min-height: 380px;
+    min-height: 440px;
     background: radial-gradient(circle, transparent 62%, white 67%, white 85%, white 100%);
 }
 #mot h2{line-height: 95%;}
+#mot p{font-family: lato-light;}
+
 
 #bg1, #bg2, #bg3{min-height: 38rem;}
 #bg1{
@@ -491,5 +492,24 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 }
 */
 
-#photosMariage a{color: #8fb1d6;}
+#photosMariage a, #prestas a{color: #8fb1d6;}
+#photosMariage p, #photosMariage b{font-family: lato-light;}
+
 #prestas img{max-width: 180px; border-radius: 51%; opacity: .95}
+#mot p{font-family: lato-light;}
+
+#prestas p.desc-txt{font-family: lato-light;}
+
+
+@media (max-width: 991.98px) {
+
+    #mot .img{max-width: 380px;}
+    #mot .img > div{min-height: 380px;}
+
+}
+@media (max-width: 767.98px) {
+    #accueilV2 h2{font-size: 5rem !important;}
+    .main-txt{font-size: 1.2rem !important;}
+}
+@media (max-width: 575.98px) {
+}
