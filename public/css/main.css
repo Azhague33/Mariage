@@ -239,7 +239,10 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
 
 
 /********** HEADER **********/
-    #accueil{background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228 ,1) 39%, rgb(218, 218, 218) 100%); background-attachment: fixed;}
+    #accueil{background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228 ,1) 39%, rgb(218, 218, 218) 100%);}
+    @media (min-width: 576px) {
+        #accueil{background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(228, 228, 228 ,1) 39%, rgb(218, 218, 218) 100%); background-attachment: fixed;}
+    }
     #accueil .bg-photo-container{
         padding-bottom: 8rem;
         background: url('/images/constance-et-guillaume.png');
@@ -424,7 +427,14 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     background: url(/images/v2/constance-et-guillaume-bg-v2-1.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-attachment: fixed;
+}
+@media (min-width: 576px) {
+    #accueilV2{
+        background: url(/images/v2/constance-et-guillaume-bg-v2-1.jpg);
+        background-position: bottom center;
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+        background-attachment: fixed;
+    }
 }
 #accueilV2  div.div-2{min-height: 42rem;}
 #accueilV2 h2{font-size: 6rem !important;}
@@ -452,39 +462,37 @@ footer .fa-trophy{height: .8rem; margin-left: .3rem; margin-bottom: .2rem;}
     background: url(/images/v2/eglise.jpg);
     background-position: center center;
     background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-attachment: fixed;
 }
 #bg2{
     background: url(/images/v2/cocktail.jpg);
     background-position: center center;
     background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-attachment: fixed;
 }
 #bg3{
     background: url(/images/v2/soiree.jpg);
     background-position: top center;
     background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-attachment: fixed;
 }
-/*
-#video{
-    background: url(/images/v2/pretre-v2.jpg);
-    background-position: top right;
-    background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-    background-attachment: fixed;
+@media (min-width: 576px) {
+    #bg1{
+        background: url(/images/v2/eglise.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+        background-attachment: fixed;
+    }
+    #bg2{
+        background: url(/images/v2/cocktail.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+        background-attachment: fixed;
+    }
+    #bg3{
+        background: url(/images/v2/soiree.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+        background-attachment: fixed;
+    }
 }
-#video .video-container{
-    background-color: rgba(0, 0, 0, .3);
-    padding: 2rem 5rem;
-}
-#video .video-container > div{
-    max-width: 420px;
-}
-#video video{
-    width: 100%;
-    height: 520px;
-}
-*/
 #photosMariage a.main-link, #prestas a{color: #8fb1d6;}
 #photosMariage p, #photosMariage b{font-family: lato-light;}
 
